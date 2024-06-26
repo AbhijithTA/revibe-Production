@@ -1,0 +1,2430 @@
+:root {
+    --text-01: #45413E;
+    --light-01: #F9F9F9;
+    --light-02: #FFFFFF;
+    --brand-01: #DB7F67;
+    --brand-02: #F4CFC6;
+    --card-hover: 0px 4px 24px rgba(0, 0, 0, 0.15);
+    --card-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    --hover-timing: all 0.2s ease;
+    --nav-card-size: 240px;
+
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    scroll-behavior: smooth;
+
+
+}
+.nbg{margin: 0%;}
+
+
+
+.lg{margin-left: 1em;}
+.sighn{max-width: 30%;
+min-width: 30%;
+margin-left: 3em;}
+.pttt{max-width: 90%;image-orientation: cover;}
+
+a{text-decoration: none;}
+.instlogo{max-width: 7%;
+min-width: 7%;}
+.fblogo{max-width:3.5%;
+min-width: 3.5%;}
+.inlogo{max-width:4%;
+min-width: 4%;}
+.xlogo{max-width:3.5%;
+min-width: 3.5%;}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbt{
+  background-color: white;
+  color: black;
+  font-size:10px ;
+  border: 1px solid white; 
+  background: white;
+  color: black;
+  margin-left: 0em;
+  padding: 5px 10px 5px;
+  border-radius: 8px;
+}
+.navbt:hover{background-color: red;
+color: whitesmoke;
+ border: 1px solid red;
+ }
+.b4h2{font-size: 25px;}
+.navb{
+  background-color: white;
+  color: black;
+  border: 1px solid white; 
+  background: black;
+  color: whitesmoke;
+  margin-right: 0em;
+  padding: 0.1rem .8rem;
+  border-radius: 6px;
+}
+/* .navb:hover{color: yellow;} */
+
+.ct1{font-size:15px;padding:.5em .5em;}
+
+.bannerh1{text-align: center;
+padding-top: 15em;padding-bottom: 11em;
+background-image: url("../images/steptodown.com917795.jpg");}
+.bh1{font-size: 50px;}
+.bh1hover{color: whitesmoke;
+text-decoration: none;
+animation: fadeIn 5s;}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.rpdefine{font-size: 10px;}
+
+
+
+
+.bh1hover:hover{color: whitesmoke;
+}
+.button1{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  border-radius: 9999px;
+  background-color: red;
+  padding: 0.1rem 1.8rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+.btext{padding-top: 6px;}
+.button1:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.bannerse2{background-image:url("../images/steptodown.com330500.png");
+ background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;}
+
+.pb2{padding: 10em 5em;
+ color: whitesmoke;}
+ 
+
+.b3h2{color: whitesmoke;
+padding: 2em 0em 0em 0em;margin: 0em;}
+
+.pp34{font-size: 12.5px;
+color:#525453;padding: 0;marker: 0;padding: .3em; }
+
+.pp33{font-size: 12px; padding: 0;margin: 0;font-weight:bold; }
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background: black;
+   
+}
+
+header {
+    /*    width: 100%;*/
+    height: auto;
+    position: sticky;
+    top: 0;
+    /*    border: 1px solid red;*/
+    z-index: 100;
+}
+
+
+
+nav {
+    color: var(--text-01);
+    font-weight: 600;
+    height: 80px;
+   background-color: black;
+   color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--pg-margin);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav ul.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: right;
+    position: relative;
+    padding-top: 10px;
+}
+
+nav .navigation-menu a {
+    font-size: 16px;
+    text-decoration: none;
+    color:white;
+
+
+}
+
+nav .navigation-menu > li {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+
+    /*    justify-items: center;*/
+}
+
+nav .navigation-menu > li > a {
+    position: relative;
+    /*    border: 1px solid purple;*/
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+nav .navigation-menu > li:hover ul.subnav {
+    visibility: visible;
+    opacity: 1;
+    top: 64px;
+
+}
+
+
+nav .navigation-menu > li > ul.subnav {
+    /*    border: 1px solid green;*/
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 66px;
+    background: var(--light-01);
+    box-shadow: var(--card-hover);
+    border-radius: 12px;
+    opacity: 0;
+    transition: var(--hover-timing);
+}
+
+
+nav > #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 8px;
+    line-height: 100%;
+}
+
+nav > #logo > span {
+    font-size: 32px;
+}
+.lg{max-width: 20%;
+min-width: 20%;}
+nav > #utility {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 16px;
+}
+
+
+#container{
+  width: 90%;
+  margin: 5%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3em;
+  flex-wrap: wrap;
+  gap: 3%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 300px;
+  height: 200px;
+  margin: 0%;
+  background-color: #000;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: .5s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 300px;
+  height: 200px;
+}
+.element:hover p{
+  display: block;animation: fadeIn 1s;}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+}
+.element p{
+  font-size: 0.7rem;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po1{
+  font-size: 0.9rem;
+  color: whitesmoke;
+  background-color: #121212;
+ padding: 40px 25px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.9rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 25px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size: 0.9rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 25px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size: 0.9rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 25px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.9rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 25px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.9rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 25px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+
+
+
+#first{
+  background-image:url("../images/ad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#second{
+  background-image: url("../images/dg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third{
+  background-image: url("../images/pr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#first1{
+  background-image: url("../images/cf.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#second2{
+  background-image: url("../images/cm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third3{
+  background-image: url("../images/wd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.po11{font-size: 10px;}
+
+
+.banner4{background-color: whitesmoke;}
+
+
+
+.banner5{overflow: hidden;}
+.b5h2{color:black; font-size: 16px;}
+.b5h1{color: whitesmoke;
+margin: 2em 0em 0em 0em;}
+.recard{text-align: center;
+background-color: #f0f0f0;padding: 1em;
+border-radius: 20px;
+margin: 3em 1.5em;
+overflow: hidden;}
+.b5p1 {color: whitesmoke;padding: .5em 1em;}
+.b5pdi{ width:100px;
+  height: 100px;
+  object-fit: cover;
+overflow: hidden;
+}
+.b5pic1{object-fit: fill;
+width:100px;
+  height: 100px;padding: .5em;
+border-radius: 50px 50px 50px 50px;}
+
+.creatives{padding: 1em;overflow: hidden;
+background-color: whitesmoke;padding: 1em 3em;
+}
+.crh1{padding: 4.5em 1em .3em .5em;margin: 0em;}
+.crm1{max-width: 200px;
+min-width: 200px;
+padding: .5em;}
+
+.crp{max-width: 200px;
+min-width: 200px;
+padding: .5em;object-fit: fill;}
+
+
+.crpa1{margin: 1em;
+padding: .5em;}
+.beh{margin: 0;}
+
+.pat{max-width: 100%;
+min-width: 100%;}
+
+
+.Behanceb{
+  background-color:red;
+  color:whitesmoke;
+ border: none;
+  margin: 0em 2em 1em 1.3em;
+  padding: .4rem 1rem;
+  border-radius: 6px;
+}
+.Behanceb:hover{background-color: grey;}
+.ct2{font-size:17px;padding:.2em .5em; }
+
+
+.gallery-section
+{
+  width: 100%;
+  padding: 60px 0;
+  background: whitesmoke;
+}
+
+.inner-width
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.border
+{
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 30px auto;
+}
+
+.gallery-section .gallery
+{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image
+{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-section .image img
+{
+  width: 100%;
+  height: 100%; 
+  transition: 0.4s;
+}
+.gallery-section .image:hover img
+{
+  transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width: 960px)
+{
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .gallery-section .image{
+    flex: 50%;
+    .b4h2{font-size: 15px;}
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
+
+
+.copyright-text{padding: 0%;margin:0%;}
+
+/*pat*/
+
+
+
+.banner4{padding: 2em .5em; background-color: whitesmoke;}
+
+
+.header {
+  background-color: #ffffff;
+  padding: 0 20px;
+  height: 80px;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 63px 0 20px;
+  height: 80px;
+}
+
+.main-content-wrapper {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+}
+
+.header__logo_img {
+  width: 135.04px;
+  height: 30.32px;
+}
+
+.header__searchbox_box {
+  background-color: #ffffff;
+  width: 763px;
+  height: 40px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ebebf1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.header__searchbox_box button {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__searchbox_input-field {
+  font-size: 14px;
+  color: #bbc4d6;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+ 
+  padding-left: 39px;
+  border: none;
+  outline: none;
+}
+.header__searchbox_input-field ::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+.header__searchbox_input-field ::-moz-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+.header__searchbox_input-field :-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+.header__searchbox_input-field ::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+.header__searchbox_input-field ::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.header__searchbox_button {
+  position: absolute;
+  left: 12px;
+}
+.header__searchbox_button :hover {
+  cursor: pointer;
+}
+
+.header__user-info_mobile {
+  display: none;
+}
+
+.header__user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 108px;
+  height: 80px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 19px;
+  border-left: 1px solid #ebebf1;
+}
+.header__user-info .header__user-info_username {
+  
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #768298;
+}
+.header__user-info .header__user-info_userpic {
+  max-width: 40px;
+  max-height: 40px;
+  margin-left: 10px;
+}
+
+.main__title {
+  margin-bottom: 30px;
+ 
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 160%;
+  color: #121920;
+}
+
+.partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.partners-card {
+  background-color: #ffffff;
+  border: 1px solid #ebebf1;
+  width: 270px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 30px 30px 0;
+  -webkit-box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+  box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+  border-radius: 5px;
+}
+
+.partners-card:last-child {
+  margin-right: 0;
+}
+.partners-card:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+.partners-card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.partners-card__image {
+  max-width: 234px;
+  max-height: 64.2px;
+}
+
+@media screen and (max-width: 1208px) {
+  .partners__card {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .header__searchbox_box {
+    width: 347.165px;
+  }
+
+  .partners-card {
+    width: 22%;
+  }
+  .partners-card:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .partners-card:nth-last-child(-n+4) {
+    margin-bottom: 30px;
+  }
+  .b4h2{font-size: 20px;}
+  .partners-card:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 920px) {
+  .partners-card__image {
+    max-width: 152.1px;
+    max-height: 41.73px;
+  }
+}
+@media screen and (min-width: 765px) and (max-width: 800px) {
+  .header__wrapper {
+    padding: 0 41px 0 0;
+  }
+  .b4h2{font-size: 15px;}
+
+  .partners-card {
+    width: 220.86px;
+    margin: 0 20px 20px 0;
+  }
+  .partners-card:nth-child(4n) {
+    margin-right: 20px;
+  }
+  .partners-card:nth-child(3n) {
+    margin-right: 0;
+  }
+  .partners-card:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .partners-card.partners-card:nth-last-child(-n+4) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 726px) and (max-width: 765px) {
+  .header__wrapper {
+    padding: 0 41px 0 0;
+  }
+
+  .main__title {
+    font-size: 28px;
+  }
+
+  .partners-card {
+    width: 207.9px;
+    margin: 0 20px 20px 0;
+  }
+  .partners-card:nth-child(4n) {
+    margin-right: 20px;
+  }
+  .partners-card:nth-child(3n) {
+    margin-right: 0;
+  }
+  .partners-card:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .partners-card.partners-card:nth-last-child(-n+4) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 726px) {
+  .header__searchbox_box {
+    width: 192.276px;
+  }
+
+  .partners-card {
+    width: 30%;
+    margin: 0 20px 20px 0;
+  }
+  .partners-card:nth-child(4n) {
+    margin-right: 20px;
+  }
+  .partners-card:nth-child(3n) {
+    margin-right: 0;
+  }
+  .partners-card:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .partners-card.partners-card:nth-last-child(-n+4) {
+    margin-bottom: 20px;
+  }
+
+  .partners-card__image {
+    max-width: 157.95px;
+    max-height: 64.2px;
+  }
+}
+@media screen and (max-width: 600px) {
+
+.lg{margin-left: .8em;}
+
+  .main-content-wrapper {
+    min-height: 1423px;
+  }
+.b4h2{font-size: 13px;}
+  .header {
+    padding: 0;
+    height: 105px;
+  }
+
+  .header__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 17px;
+  }
+
+  .header__searchbox_button {
+    left: 22px;
+    top: 12px;
+  }
+
+  .header__logo {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    padding-left: 21px;
+  }
+
+  .header__searchbox {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 100vw;
+    margin-top: 11px;
+  }
+
+  .header__searchbox_box {
+    width: 100vw;
+    border: none;
+  }
+
+  .header__searchbox_input-field {
+    border-top: 1px solid #ebebf1;
+    padding-left: 49px;
+  }
+
+  .header__user-info_mobile {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    padding-right: 21px;
+  }
+
+  .header__user-info {
+    display: none;
+  }
+
+  .header__user-info_mobile {
+    display: block;
+  }
+
+  .main__title {
+    font-size: 28px;
+  }
+
+  .partners {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .partners-card {
+    width: 100%;
+    margin: 0 20px 20px 0;
+    height: 140px;
+  }
+  .partners-card:nth-last-child(-n+4) {
+    margin-bottom: 20px;
+  }
+  .partners-card:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main__title {
+    font-size: 28px;
+  }
+}
+
+
+/*pat*/
+
+
+
+
+
+
+/*footer */
+
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: black;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background:red;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: red;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: ;
+    padding: 13px 20px;
+    border: 1px solid ;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 15px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+
+
+/*review*/
+
+.wrapper{
+  padding: 70px 0;
+  overflow-x: hidden;
+}
+
+
+.my-slider{
+  padding: 0 70px;
+}
+.slick-initialized .slick-slide{
+  background-color: #b32532;
+  color: #FFF;
+  height: 200px;
+  margin: 0 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.slick-next, .slick-prev{
+  z-index: 5;
+}
+.slick-next{
+  right: 15px;
+}
+.slick-prev{
+  left: 15px;
+}
+.slick-next:before, .slick-prev:before{
+  color: #000;
+  font-size: 26px;
+}
+
+
+/*review*/
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --pg-margin: 14px;
+    }
+
+    
+    nav { margin: .1em;padding: 0px 0px 0px 20px;
+        position: relative;
+    }
+
+  
+     
+    }
+
+    nav ul.navigation-menu li a {
+        font-size: 14px;
+        /*        padding: 0 12px;*/
+        white-space: nowrap;
+    }
+
+    nav ul.navigation-menu .subnav {
+        display: none;
+    }
+
+    nav ul.navigation-menu > li:hover .subnav {
+        display: none;
+    }
+.navbt{
+  background-color: white;
+  color: black;
+  border: 1px solid white; 
+  background: white;
+  color: black;
+  margin-left: 0em;
+  padding: 0.04rem .4rem;
+  border-radius: 6px;
+}
+
+   
+
+    
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+
+
+
+
+
+    :root {
+        --pg-margin: 24px;
+    }
+
+   
+
+    nav { margin: .1em;padding: 0px 0px 0px 30px;
+        position: relative;
+    }
+
+    nav ul.navigation-menu li a {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    nav ul.navigation-menu .subnav {
+        display: none;
+    }
+
+    nav ul.navigation-menu > li:hover .subnav {
+        display: none;
+    }
+
+   
+   
+    
+
+    
+
+
+   
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        --pg-margin: 48px;
+    }
+
+  
+    ul.subnav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto auto;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        padding: 48px;
+    }
+
+
+    nav ul.navigation-menu {
+        top: 0;
+        z-index: 1;
+        background: none;
+        width: auto;
+        position: relative;
+    }
+
+    nav ul.navigation-menu .subnav {
+        display: flex;
+    }
+
+    nav ul.navigation-menu > li:hover .subnav {
+        display: flex;
+    }
+
+    #locate p {
+
+        width: 40%;
+    }
+
+    footer {
+
+
+        flex-direction: row;
+        text-align: left;
+
+    }
+
+}
+@media only screen and (max-width: 1200px){
+.lg{margin-left: .7em;}
+
+  nav { margin: .1em;padding: 0px 10px 0px 60px;
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 1138px){
+
+.lg{margin-left: .6em;}
+
+.bannerse2{background-image:url("../images/jjbj.png");
+ background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;}
+}
+@media only screen and (max-width: 919px){
+
+.lg{margin-left: .5em;}
+
+.bannerse2{background-image:url("../images/jjbj.png");
+ background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;}
+}
+
+@media only screen and (max-width: 770px){
+
+.lg{margin-left: .4em;}
+
+
+.bannerse2{background-image:url("../images/hvhf.png");
+ background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;}
+
+            .b2h4{font-size: 17px;
+              padding-top: 5em;
+            animation: fadeIn 5s;}
+
+              .b2p{font-size: 17px;
+              }
+               .pb2{padding: 6em 2em;margin: 1em;}
+}
+@media only screen and (max-width: 364px){
+
+.lg{margin-left: 0em;}
+
+
+.bannerse2{background-image:url("../images/bb n.png");
+ background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;}
+.b2h4{font-size: 17px;
+         }
+              .b2p{font-size: 14px;padding: 0em;margin: 0em;}
+                .pb2{padding: 4em 3em;margin: 0em;}
+              
+
+
+}
+
+@media only screen and (max-width: 1100px){
+  nav { margin: .1em;padding: 0px 10px 0px 50px;
+        position: relative;
+    }
+
+#container{
+  width: 90%;
+  margin: 5%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 2%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 250px;
+  height: 200px;
+  margin: 2%;
+ color: whitesmoke;
+  background-color: #121212;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 300px;
+  height: 160px;
+}
+.element .po1{
+  font-size: 0.8rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 20px 55px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.8rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 25px 20px 20px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size: 0.8rem;
+  background-color: #fff;
+  padding: 35px 15px 30px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size: 0.8rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 20px 25px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.8rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 32px 20px 33px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.8rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 20px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.bannerh1{text-align: center;
+padding-top: 12em;padding-bottom: 8em;
+background-image: url("../images/steptodown.com917795.jpg");}
+.button1{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  border-radius: 9999px;
+  background-color: red;
+  padding: 0.1rem 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+.btext{padding-top: 6px;
+font-size: 15px;}
+.button1:hover {
+  background-color: transparent;
+  color: white;
+}
+.ct1{font-size:15px; }
+
+}
+
+@media only screen and (max-width: 1042px){
+.bh1{font-size: 39px;
+padding: 0em 1.5em .5em 1.5em;}
+#container{
+  width: 90%;
+  margin: 5%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 2%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 250px;
+  height: 200px;
+  margin: 0%;
+  color: whitesmoke;
+  background-color: #121212;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 2500px;
+  height: 160px;
+}
+.element p{
+  font-size: 0.5rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element:hover p{
+  display: block;
+}
+element .po1{
+  font-size: 0.8rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 20px 55px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.8rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 25px 20px 20px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size: 0.8rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 35px 15px 30px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size: 0.8rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 20px 25px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.8rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 32px 20px 33px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.8rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 20px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+}
+
+
+@media only screen and (max-width: 1060px){
+.bh1{font-size: 38px;
+padding: 0em 1.5em .2em 1.5em;}
+#container{
+  width: 90%;
+  margin: 5%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 3%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 250px;
+  height: 200px;
+  margin: 1%;
+  background-color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 250px;
+  height: 200px;
+}
+.element p{
+  font-size: 0.5rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po1{
+  font-size: 0.7rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 20px 55px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.7rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 25px 20px 20px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size: 0.7rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 35px 15px 30px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size: 0.7rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 20px 25px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.7rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 32px 20px 33px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.7rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 20px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element:hover p{
+  display: block;
+}
+}
+
+@media only screen and (max-width: 948px){
+.bh1{font-size: 35px;
+padding: 0em 1.5em .5em 1.5em;}
+.ct1{font-size:15px; }
+
+#container{
+  width: 90%;
+  margin: 5%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 3%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 200px;
+  height: 200px;
+  margin: 1%;
+  color: whitesmoke;
+  background-color: #121212;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 250px;
+  height: 200px;
+}
+.element p{
+  font-size: 0.5rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po1{
+  font-size: 0.6.5rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 20px 55px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.6.5rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 25px 20px 20px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size: 0.6.5rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 35px 15px 30px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size: 0.6.5rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 20px 25px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.6.5rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 32px 20px 33px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.6.5rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 20px 30px 25px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element:hover p{
+  display: block;
+}
+}
+
+
+@media only screen and (max-width: 821px){
+.ct1{font-size:14px; }
+
+#container{
+  width: 90%;
+  margin: 5%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 3%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 180px;
+  height: 180px;
+  margin: 1%;
+ color: whitesmoke;
+  background-color: #121212;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 220px;
+  height: 190px;
+}
+.element p{
+  font-size: 0.6rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po1{
+  font-size: 0.6.3rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 45px 15px 43px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.6.3rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 20px 15px 15px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size: 0.6.3rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 25px 15px 20px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size: 0.6.3rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 15px 25px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.6.3rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 15px 30px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.6.3rem;
+color: whitesmoke;
+  background-color: #121212;
+  padding: 20px 15px 20px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element:hover p{
+  display: block;
+}
+}
+
+@media only screen and (max-width: 745px){
+
+#container{
+  width: 90%;
+  margin: 5% ;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 2%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 180px;
+  height: 150px;
+  margin: 1%;
+ color: whitesmoke;
+  background-color: #121212;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 200px;
+  height: 190px;
+}
+.element p{
+  font-size: 0.6rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po1{
+  font-size: 0.6rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 50px 15px 54px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.6rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 20px 15px 15px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size: 0.6rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 15px 30px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size: 0.6rem;
+color: whitesmoke;
+  background-color: #121212;  padding: 33px 15px 30px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.6rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 15px 35px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.6rem;
+color: whitesmoke;
+  background-color: #121212;
+  padding: 25px 15px 25px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element:hover p{
+  display: block;
+}
+}
+
+@media only screen and (max-width: 692px){
+
+#container{
+  width: 90%;
+  margin: 5%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 2%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 150px;
+  height: 150px;
+  margin: 1%;
+  background-color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 180px;
+  height: 190px;
+}
+.element p{
+  font-size: 0.6rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po1{
+  font-size: 0.6rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 50px 15px 54px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.6rem;
+color: whitesmoke;
+  background-color: #121212;
+  padding: 20px 15px 15px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size: 0.6rem;
+color: whitesmoke;
+  background-color: #121212;
+  padding: 30px 15px 30px 20px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size: 0.6rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 33px 15px 30px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.6rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 40px 15px 35px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.6rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 25px 15px 25px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element:hover p{
+  display: block;
+}
+}
+
+
+
+
+
+@media only screen and (max-width: 593px){
+  .ct1{font-size:13px; }
+
+.bannerh1{text-align: center;
+padding-top: 10em;padding-bottom: 8em;
+background-image: url("../images/steptodown.com917795.jpg");}
+.button1{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  border-radius: 9999px;
+  background-color: red;
+  padding: 0.02rem 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+.btext{padding-top: 6px;
+font-size: 15px;}
+.button1:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.bh1{font-size: 30px;
+padding: 0em 1.5em .5em 1.5em;}
+#container{
+  width: 90%;
+  margin: 5%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 4%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 130px;
+  height: 130px;
+  margin: .5%;
+ color: whitesmoke;
+  background-color: #121212;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 170px;
+  height: 190px;
+}
+.element p{
+  font-size: 0.6rem;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po1{
+  font-size: 0.5.4rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 29px 15px 29px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.5.5rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 15px 10px 15px 10px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size:  0.5.5rem;
+  color: whitesmoke;
+  background-color: #121212;
+  padding: 20px 10px 20px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size:  0.5.5rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 23px 10px 20px 13px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.5.5rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 29px 11px 28px 12px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.5.5rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 15px 10px 10px 13px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element:hover p{
+  display: block;
+}
+.button1{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  border-radius: 9999px;
+  background-color: red;
+  padding: 0.1rem 1.8rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+.btext{padding-top: 6px;}
+.button1:hover {
+  background-color: transparent;
+  color: white;
+}
+.nb2{max-width: 50%;
+min-width: 50%;}
+
+}
+
+@media only screen and (max-width: 538px){
+.lg{max-width: 45%;
+min-width: 45%;
+
+
+margin-left: 0em;}
+
+#container{
+  width: 90%;
+  margin:  3% 5%;
+  height: 160vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 3%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 400px;
+  height: 230px;
+  margin: 5%;
+  color: whitesmoke;
+  background-color: #121212;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 390px;
+  height: 230px;
+}
+.element p{
+  font-size: 0.7rem;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po1{
+  font-size: 0.8rem;
+  color: whitesmoke;
+  background-color: #121212;
+   color: whitesmoke;
+  padding: 29px 15px 29px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po2{
+  font-size: 0.8rem;
+   color: whitesmoke;
+color: whitesmoke;
+  background-color: #121212;
+  padding: 20px 10px 10px 10px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.element .po3{
+  font-size:  0.8rem;
+   color: whitesmoke;
+color: whitesmoke;
+  background-color: #121212;
+  padding: 20px 10px 20px 15px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po4{
+  font-size:  0.8rem;
+   color: whitesmoke;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 23px 10px 20px 13px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element .po5{
+  font-size: 0.8rem;
+   color: whitesmoke;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 29px 11px 28px 12px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+
+.element .po6{
+  font-size: 0.8rem;
+   color: whitesmoke;
+ color: whitesmoke;
+  background-color: #121212;
+  padding: 15px 10px 10px 13px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+
+.element:hover p{
+  display: block;
+}
+.bannerh1{text-align: center;
+padding-top: 13em;padding-bottom: 8em;
+background-image: url("../images/steptodown.com917795.jpg");}
+.button1{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  border-radius: 9999px;
+  background-color: red;
+  padding: 0.02rem 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+.btext{padding-top: 6px;
+font-size: 15px;}
+.button1:hover {
+  background-color: transparent;
+  color: white;
+}
+.navigation-menu{padding: 0em;
+    margin: 0em;
+
+}
+
+@media only screen and (max-width: 394px)
+
+{
+  .ct1{font-size:12px; }
+.lg{max-width: 45%;
+min-width: 45%;
+margin-left: 0em;
+padding-left: 0em;}
+
+    .bannerh1{text-align: center;
+padding-top: 9em;padding-bottom: 6em;
+background-image: url("../images/steptodown.com917795.jpg");}
+.button1{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  border-radius: 9999px;
+  background-color: red;
+  padding: 0.02rem 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+.btext{padding-top: 6px;
+font-size: 15px;}
+.button1:hover {
+  background-color: transparent;
+  color: white;
+}}
+
+
+@media only screen and (max-width: 394px)
+
+{.crh1{padding: 2.5em 1em .1em 1em ;}
+.Behanceb{padding:.5em 1em; margin:  0em 1.3em;} }
+
+@media only screen and (max-width: 1202px)
+
+{.nbg{margin: 0%;background-color: black;} }
+
+
+
+
+/
+
+
+/
+
