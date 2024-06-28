@@ -18,8 +18,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./index.css">
+<!-- <link rel="stylesheet" href="./index.css"> -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/cdn.min.js" defer></script>
+
+<style>
+  .marquee {
+    overflow: hidden;
+    position: relative;
+  }
+  .marquee-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scrolling 30s linear infinite;
+  }
+  .marquee-item {
+    display: inline-block;
+    padding-right: 2rem;
+    height: 100px;
+    object-fit: contain;
+  }
+  @keyframes scrolling {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -105,7 +127,8 @@
                 <div class="pb2">
                 <h4 class="b2h4 mb-2"><b>Who we are?</b></h4>
              <p class="b2p mb-5">Revibe Marketing, the ultimate marketing agency based in Kerala. We provide a wide range of marketing services both digital and traditional. We help our clients to promote their product and services to targeted audiences and achieve their goals with Revibe. Our expertise and passion will make yours brand with new vibe</p>
-             <h6>Founder/CEO<b> BRIJITH DINAKARAN</b></h6>
+          <div class="flex flex-col">   <h6>Founder/CEO</h6>
+            <b> BRIJITH DINAKARAN</b></div>
              <img class="sighn" src="./images/brijith signature for web-01.png">
 
 
@@ -120,7 +143,10 @@
 
 <section>
 
-    <a href="./Service/service.html"><h2 class="text-center uppercase text-4xl mt-20 font-bold"><span class="text-[#ffd60a]">Services</span></h2></a>
+  <a href="./Service/service.html" class="text-[#ffd60a]">
+    <h2 class="text-center uppercase text-4xl mt-20 font-bold">Services</h2>
+  </a>
+  
 
     <div id="container"></a>
         
@@ -250,106 +276,94 @@
 
 
 
-<section class="flex flex-col items-center pb-16 h-auto">
-      <h2 class="text-3xl font-bold mb-8 text-white mt-3">Review</h2> 
-       <div class="container grid grid-cols-1 md:grid-cols-3 gap-8">  
-        <div class="bg-white rounded-lg shadow-md px-8 py-6">  
-            <img class="w-30 h-24 object-cover rounded-xl " src="./images/PHOTO-2024-02-22-13-58-19.jpg" alt="Review by Anandh">
-
-    <div class="flex items-start justify-between mt-4 flex-col">  
-        <h1 class="text-xl font-semibold">Anandh </h1>  
-        <p class="mt-1 text-sm text-[#001524] capitalize">Arun icecream tripunithura</p>
+<section class="flex flex-col items-center pb-16 h-auto bg-black">
+  <h2 class="text-3xl font-bold mb-8 text-white mt-3">Review</h2>
+  <div class="container grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 rounded-lg shadow-md px-8 py-6">
+      <img class="w-30 h-24 object-cover rounded-xl" src="./images/PHOTO-2024-02-22-13-58-19.jpg" alt="Review by Anandh">
+      <div class="flex items-start justify-between mt-4 flex-col">
+        <h1 class="text-xl font-semibold text-white">Anandh</h1>
+        <p class="mt-1 text-sm text-gray-400 capitalize">Arun icecream tripunithura</p>
+      </div>
+      <p class="text-gray-300 mt-2">Revibe marketing is a top-notch advertising company. Their team possesses exceptional expertise and commitment to excellence. From the beginning to the end, they showed a profound understanding of my business objectives and produced exceptional results.</p>
     </div>
-
-    <p class="text-gray-700 mt-2">Revibe marketing is a top-notch advertising company. Their team possesses exceptional expertise and commitment to excellence. From the beginning to the end, they showed a profound understanding of my business objectives and produced exceptional results.</p>
-  </div>
-        <div class="bg-white rounded-lg shadow-md px-8 py-6">  
-            <img class="w-30 h-24 object-cover rounded-xl" src="../images/IMG-20240214-WA0031.jpg" alt="Review by Anandh">
-
-    <div class="flex items-start justify-between mt-4 flex-col">  
-        <h4 class="text-xl font-semibold">Sandeep satyan </h4>  
-        <p class="mt-1 text-sm capitalize">MD sreemuruga cafe</p>
+    <div class="bg-gray-800 rounded-lg shadow-md px-8 py-6">
+      <img class="w-30 h-24 object-cover rounded-xl" src="../images/IMG-20240214-WA0031.jpg" alt="Review by Sandeep Satyan">
+      <div class="flex items-start justify-between mt-4 flex-col">
+        <h4 class="text-xl font-semibold text-white">Sandeep Satyan</h4>
+        <p class="mt-1 text-sm text-gray-400 capitalize">MD Sreemuruga Cafe</p>
+      </div>
+      <p class="text-gray-300 mt-2">An excellent team with a combination of enthusiasm and creativity. I am one of their clients and having a great time with them in their work and also the way they are maintaining relationships with clients. Team gives full efforts to serve you the best results. They work with a very efficient and brilliant team.</p>
     </div>
-
-    <p class="text-gray-700 mt-2">An excellent team with combination of enthusiasm and creativity. I am one of their client and having great time them in their work and also the way they are maintaining relationships with client. Team gives full efforts to serve you the best results. They work with very much efficient and brilliant team.</p>
-  </div>
-        <div class="bg-white rounded-lg shadow-md px-8 py-6">  
-            <img class="w-30 h-24 object-cover rounded-xl" src="../images/PHOTO-2024-02-20-09-51-23.jpg" alt="Review by Anandh">
-
-    <div class="flex items-start justify-between mt-4 flex-col">  
-        <h4 class="text-xl font-semibold">Rahul Menon </h4>  
-        <p class="mt-1 text-sm capitalize">Director Global Academy</p>
+    <div class="bg-gray-800 rounded-lg shadow-md px-8 py-6">
+      <img class="w-30 h-24 object-cover rounded-xl" src="../images/PHOTO-2024-02-20-09-51-23.jpg" alt="Review by Rahul Menon">
+      <div class="flex items-start justify-between mt-4 flex-col">
+        <h4 class="text-xl font-semibold text-white">Rahul Menon</h4>
+        <p class="mt-1 text-sm text-gray-400 capitalize">Director Global Academy</p>
+      </div>
+      <p class="text-gray-300 mt-2">Revibe Marketing is a beacon of innovation and strategic brilliance in the realm of marketing firms. From the moment you engage with their team, it's evident that they are committed to understanding your business's unique needs and goals.</p>
     </div>
-
-    <p class="text-gray-700 mt-2"> Revibe Marketing is a
-          beacon of innovation and strategic brilliance in the realm of marketing firms. From the moment you engage with their team, it's evident that they are committed to understanding your business's unique needs and goals.</p>
-  </div>
   </div>
 </section>
 
 
-<section class="banner4"><center><h2 class="b4h2 mb-10"><b>Our Partners</b></h2></center>
-    <!-- <img class="pat" src="./images/Our Partners.png"> -->
-   
-    <div class="marquee overflow-hidden">
-        <div class="marquee-content flex">
-            <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/luk.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/shamasree.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/Invisors - Logo.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/logo06.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/clean turst.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/vidhyathri.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/trans.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/cliton.png" alt="luker" class="block w-full">
-          </div>
-          <!-- Duplicate the images to create a continuous loop effect -->
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/luk.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/shamasree.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/Invisors - Logo.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/logo06.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/clean turst.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/vidhyathri.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/trans.png" alt="luker" class="block w-full">
-          </div>
-          <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56 mx-4">
-            <img src="./images/cliton.png" alt="luker" class="block w-full">
-          </div>
-        </div>
+
+<section class="banner4 py-10">
+  <center><h2 class="text-3xl font-bold mb-10"><b>Our Partners</b></h2></center>
+  <div class="marquee">
+    <div class="marquee-content space-x-8">
+      <!-- Repeat your images here -->
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/luk.png" alt="luker" class="block w-full">
       </div>
-      
-
-
-
-
-
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/shamasree.png" alt="shamasree" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/Invisors - Logo.png" alt="Invisors" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/logo06.png" alt="logo06" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/clean turst.png" alt="clean turst" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/vidhyathri.png" alt="vidhyathri" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/trans.png" alt="trans" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/cliton.png" alt="cliton" class="block w-full">
+      </div>
+      <!-- Duplicate for continuous loop effect -->
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/luk.png" alt="luker" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/shamasree.png" alt="shamasree" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/Invisors - Logo.png" alt="Invisors" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/logo06.png" alt="logo06" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/clean turst.png" alt="clean turst" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/vidhyathri.png" alt="vidhyathri" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/trans.png" alt="trans" class="block w-full">
+      </div>
+      <div class="marquee-item flex-none w-32 sm:w-40 md:w-48 lg:w-56">
+        <img src="./images/cliton.png" alt="cliton" class="block w-full">
+      </div>
+    </div>
+  </div>
 </section>
 
 
