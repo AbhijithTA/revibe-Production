@@ -41,46 +41,38 @@
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
   }
+  .service-description {
+      transition: opacity 0.3s ease-in-out;
+    }
+    .hidden {
+      opacity: 0;
+    }
+    .visible {
+      opacity: 1;
+    }
 </style>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<header class="bg-black">
-    <nav class="container mx-auto p-4 flex items-center justify-between">
-      <div id="logo">
-        <img class="h-12" src="./images/revibe logo new.png" alt="Revibe Logo">
-      </div>
-      <div class="hidden md:block">
-        <ul class="flex space-x-4">
-          <li>
-            <a href="./contact/contact.html">
-              <button class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">
-                <b>Contact Us</b>
-              </button>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="md:hidden" x-data="{ open: false }">
-        <button @click="open = !open" class="text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-        <div x-show="open" class="bg-gray-800 mt-2 rounded-lg shadow-lg absolute top-full left-0 right-0">
-          <ul class="space-y-4 p-4">
-            <li>
-              <a href="./contact/contact.html">
-                <button class="bg-indigo-600 text-white py-2 px-4 rounded w-full text-left hover:bg-indigo-700">
-                  <b>Contact Us</b>
-                </button>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<!-- partial:index.partial.html --><header class="bg-black">
+  <nav class="container mx-auto p-4 flex items-center justify-between">
+    <div id="logo">
+      <img class="h-8 md:h-12" src="./images/revibe logo new.png" alt="Revibe Logo">
+    </div>
+    <div>
+      <ul class="flex space-x-4">
+        <li>
+          <a href="./contact/contact.html">
+            <button class="bg-gray-800 text-white py-1 px-2 rounded text-sm hover:bg-gray-700 md:py-2 md:px-4 md:text-base">
+              <b>Contact Us</b>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
    
     
     <section class="banner">
@@ -126,7 +118,8 @@
               <div class="col-lg-6 col-md-8 col-sm-12">
                 <div class="pb2">
                 <h4 class="b2h4 mb-2"><b>Who we are?</b></h4>
-             <p class="b2p mb-5">Revibe Marketing, the ultimate marketing agency based in Kerala. We provide a wide range of marketing services both digital and traditional. We help our clients to promote their product and services to targeted audiences and achieve their goals with Revibe. Our expertise and passion will make yours brand with new vibe</p>
+                <p class="b2p mb-5">We are not your traditional cut advertising agency </p>
+             <p class="b2p mb-5">Revibe Marketing is a Responsive, Elegant, Vibrant, Innovative, Benevolent and Excellent Marketing Agency  committed to our esteemed clients.  With our dedication and perseverence, we are committed to elate the  brand presence of our clients, by providing a wide range of services,</p>
           <div class="flex flex-col">   <h6>Founder/CEO</h6>
             <b> BRIJITH DINAKARAN</b></div>
              <img class="sighn" src="./images/brijith signature for web-01.png">
@@ -139,8 +132,6 @@
     
 </section>
 
-
-
 <section>
 
   <a href="./Service/service.html" class="text-[#ffd60a]">
@@ -151,7 +142,8 @@
     <div id="container"></a>
         
 <div id="first" class="element">
-  <p class="po1"><b>ADVERTISING</b><br>We craft compelling campaigns that resonate, ensuring your brand takes center stage. Elevate your message, engage effectively, and leave a lasting impression with our tailored advertising solutions.”
+  <p class="po1"><b>Social Branding</b><br>Digital Assets That Speak Volumes For Your Brand.  
+    One of the best approaches to capturing the customer’s eyes is through social media. Creating an attractive and effective platform can help bring in the soul of your business into life. Being one of the best Social Media Marketing Experts in Kochi, we create some of the most captivating posters, turning your ideas into magnificent art, keeping in touch with your brand’s narrative”
 
 
 </p>
@@ -180,7 +172,8 @@
 </p>
 </div>
 <div id="second2" class="element">
-  <p class="po5"><b>CONVENTIONAL MARKETING</b><br>We bring your narrative to life through captivating visuals and storytelling. From concept to production, our team specializes in creating compelling corporate films that showcase your brand’s essence, leaving a lasting impression on your audience.
+  <p class="po5"><b>Strategic Marketing</b><br>Personalised Ads To Give You Maximum Effectiveness.
+    To reach your target audience, we work through the world of Digital Marketing using our proven strategies, which ultimately helps achieve your marketing goals. Our Google Ads Experts will give you potential leads to grab onto the sales and also help you make the most out of your investment.
 </p>
 </div>
 <div id="third3" class="element">
@@ -188,6 +181,76 @@
 </div>
 </div><br>
 </section>
+
+
+<!-- <section class="flex flex-col md:flex-row items-start mt-20">
+  <div class="w-full md:w-1/3 px-4 md:px-10">
+    <h2 class="text-left uppercase text-4xl font-bold mb-8 text-[#ffd60a]">Services</h2>
+    <ul>
+      <li class="mb-4">
+        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="advertising">Advertising</button>
+      </li>
+      <li class="mb-4">
+        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="digital-marketing">Digital Marketing</button>
+      </li>
+      <li class="mb-4">
+        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="printing-services">Printing Services</button>
+      </li>
+      <li class="mb-4">
+        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="corporate-films">Corporate Films</button>
+      </li>
+      <li class="mb-4">
+        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="conventional-marketing">Conventional Marketing</button>
+      </li>
+      <li class="mb-4">
+        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="web-designing">Web Designing</button>
+      </li>
+    </ul>
+  </div>
+  <div class="w-full md:w-2/3 px-4 md:px-10 mt-10 md:mt-0">
+    <div id="advertising" class="service-description visible">
+      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Advertising</h3>
+      <p>We craft compelling campaigns that resonate, ensuring your brand takes center stage. Elevate your message, engage effectively, and leave a lasting impression with our tailored advertising solutions.</p>
+    </div>
+    <div id="digital-marketing" class="service-description hidden">
+      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Digital Marketing</h3>
+      <p>Navigate the digital landscape seamlessly with our strategic approach. From targeted campaigns to comprehensive online strategies, we leverage the power of the digital realm to enhance your brand’s visibility and engagement. Trust Revibe to optimize your online presence and drive success in the digital age.</p>
+    </div>
+    <div id="printing-services" class="service-description hidden">
+      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Printing Services</h3>
+      <p>Imprint your brand with precision and quality. From business essentials to eye-catching promotional materials, our printing services ensure your message is conveyed with clarity and distinction. Elevate your print presence with Revibe’s commitment to excellence.</p>
+    </div>
+    <div id="corporate-films" class="service-description hidden">
+      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Corporate Films</h3>
+      <p>We bring your narrative to life through captivating visuals and storytelling. From concept to production, our team specializes in creating compelling corporate films that showcase your brand’s essence, leaving a lasting impression on your audience.</p>
+    </div>
+    <div id="conventional-marketing" class="service-description hidden">
+      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Conventional Marketing</h3>
+      <p>Crafting timeless strategies for enduring impact. With a focus on traditional channels, we navigate the tried-and-true avenues of marketing to enhance your brand’s visibility and resonance. Trust in our expertise to create enduring connections through the art of conventional marketing.</p>
+    </div>
+    <div id="web-designing" class="service-description hidden">
+      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Web Designing</h3>
+      <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate.</p>
+    </div>
+  </div>
+</section> -->
+
+<!-- <script>
+  document.querySelectorAll('.service-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const serviceId = btn.getAttribute('data-service');
+      document.querySelectorAll('.service-description').forEach(desc => {
+        desc.classList.add('hidden');
+        desc.classList.remove('visible');
+      });
+      document.getElementById(serviceId).classList.remove('hidden');
+      document.getElementById(serviceId).classList.add('visible');
+    });
+  });
+</script> -->
+
+
+
 <section class="creatives">
 
 <div class="row">
@@ -278,33 +341,65 @@
 
 <section class="flex flex-col items-center pb-16 h-auto bg-black">
   <h2 class="text-3xl font-bold mb-8 text-white mt-3">Review</h2>
-  <div class="container grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div class="bg-gray-800 rounded-lg shadow-md px-8 py-6">
-      <img class="w-30 h-24 object-cover rounded-xl" src="./images/PHOTO-2024-02-22-13-58-19.jpg" alt="Review by Anandh">
-      <div class="flex items-start justify-between mt-4 flex-col">
-        <h1 class="text-xl font-semibold text-white">Anandh</h1>
-        <p class="mt-1 text-sm text-gray-400 capitalize">Arun icecream tripunithura</p>
+  <div class="container grid grid-cols-1 md:grid-cols-3 gap-8 mt-3">
+    <!-- Review Card 1 -->
+    <div class="bg-gray-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <div class="relative -mt-12">
+        <img class="w-24 h-24 object-cover rounded-full border-4 border-gray-700 shadow-lg" src="./images/PHOTO-2024-02-22-13-58-19.jpg" alt="Review by Anandh">
       </div>
-      <p class="text-gray-300 mt-2">Revibe marketing is a top-notch advertising company. Their team possesses exceptional expertise and commitment to excellence. From the beginning to the end, they showed a profound understanding of my business objectives and produced exceptional results.</p>
+      <div class="mt-4">
+        <div class="flex justify-center">
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+        </div>
+        <h1 class="text-xl font-semibold text-white mt-2">Anandh</h1>
+        <p class="mt-1 text-sm text-gray-400 capitalize">Arun Icecream Tripunithura</p>
+        <p class="text-gray-300 mt-2">Revibe marketing is a top-notch advertising company. Their team possesses exceptional expertise and commitment to excellence. From the beginning to the end, they showed a profound understanding of my business objectives and produced exceptional results.</p>
+      </div>
     </div>
-    <div class="bg-gray-800 rounded-lg shadow-md px-8 py-6">
-      <img class="w-30 h-24 object-cover rounded-xl" src="../images/IMG-20240214-WA0031.jpg" alt="Review by Sandeep Satyan">
-      <div class="flex items-start justify-between mt-4 flex-col">
-        <h4 class="text-xl font-semibold text-white">Sandeep Satyan</h4>
+    <!-- Review Card 2 -->
+    <div class="bg-gray-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <div class="relative -mt-12">
+        <img class="w-24 h-24 object-cover rounded-full border-4 border-gray-700 shadow-lg" src="../images/IMG-20240214-WA0031.jpg" alt="Review by Sandeep Satyan">
+      </div>
+      <div class="mt-4">
+        <div class="flex justify-center">
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+        </div>
+        <h1 class="text-xl font-semibold text-white mt-2">Sandeep Satyan</h1>
         <p class="mt-1 text-sm text-gray-400 capitalize">MD Sreemuruga Cafe</p>
+        <p class="text-gray-300 mt-2">An excellent team with a combination of enthusiasm and creativity. I am one of their clients and having a great time with them in their work and also the way they are maintaining relationships with clients. Team gives full efforts to serve you the best results. They work with a very efficient and brilliant team.</p>
       </div>
-      <p class="text-gray-300 mt-2">An excellent team with a combination of enthusiasm and creativity. I am one of their clients and having a great time with them in their work and also the way they are maintaining relationships with clients. Team gives full efforts to serve you the best results. They work with a very efficient and brilliant team.</p>
     </div>
-    <div class="bg-gray-800 rounded-lg shadow-md px-8 py-6">
-      <img class="w-30 h-24 object-cover rounded-xl" src="../images/PHOTO-2024-02-20-09-51-23.jpg" alt="Review by Rahul Menon">
-      <div class="flex items-start justify-between mt-4 flex-col">
-        <h4 class="text-xl font-semibold text-white">Rahul Menon</h4>
-        <p class="mt-1 text-sm text-gray-400 capitalize">Director Global Academy</p>
+    <!-- Review Card 3 -->
+    <div class="bg-gray-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <div class="relative -mt-12">
+        <img class="w-24 h-24 object-cover rounded-full border-4 border-gray-700 shadow-lg" src="../images/PHOTO-2024-02-20-09-51-23.jpg" alt="Review by Rahul Menon">
       </div>
-      <p class="text-gray-300 mt-2">Revibe Marketing is a beacon of innovation and strategic brilliance in the realm of marketing firms. From the moment you engage with their team, it's evident that they are committed to understanding your business's unique needs and goals.</p>
+      <div class="mt-4">
+        <div class="flex justify-center">
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+          <svg class="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-5.834 5.978L19.336 24 12 20.097 4.664 24l1.17-8.599L0 9.423l8.332-1.268L12 .587z"/></svg>
+        </div>
+        <h1 class="text-xl font-semibold text-white mt-2">Rahul Menon</h1>
+        <p class="mt-1 text-sm text-gray-400 capitalize">Director Global Academy</p>
+        <p class="text-gray-300 mt-2">Revibe Marketing is a beacon of innovation and strategic brilliance in the realm of marketing firms. From the moment you engage with their team, it's evident that they are committed to understanding your business's unique needs and goals.</p>
+      </div>
     </div>
   </div>
 </section>
+
+
 
 
 
