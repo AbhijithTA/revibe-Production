@@ -1,162 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-gray-200">
-  <header class="bg-black p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="../index.html">
-        <img class="h-12" src="./images/revibe logo new.png" alt="Revibe Logo">
-      </a>
-    </div>
-  </header>
-
-  <section class="py-10">
-    <div class="container mx-auto px-4">
-      <div class="flex md:flex-row flex-col -mx-4">
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-gray-800 shadow-lg rounded-lg p-6">
-            <div class="flex items-center mb-4">
-              <i class="fas fa-map-marked text-2xl text-indigo-600"></i>
-              <div class="ml-4">
-                <h2 class="text-xl font-bold text-white font-mono">Address</h2>
-                <p class="text-gray-400">
-                  Padannayil Line, Thekkumbhagam, Tripunithura, Kochi, Kerala
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-gray-800 shadow-lg rounded-lg p-6">
-            <div class="flex items-center mb-4">
-              <i class="fas fa-envelope text-2xl text-indigo-600"></i>
-              <div class="ml-4">
-                <h2 class="text-xl font-bold text-white font-mono">E-mail and Phone No.</h2>
-                <p class="text-gray-400">revibemarketingofficial@gmail.com</p>
-                <p class="text-gray-400">+91 9846883789</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-gray-800 shadow-lg rounded-lg p-6 h-full">
-            <div class="flex items-center mb-4">
-              <i class="fas fa-clock text-2xl text-indigo-600"></i>
-              <div class="ml-4">
-                <h2 class="text-xl font-bold text-white font-mono">Office Time</h2>
-                <p class="text-gray-400">Mon - Sat, 9:00 AM - 7:00 PM</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/cdn.min.js"
+      defer
+    ></script>
+  </head>
+  <body class="bg-black text-gray-200">
+    <header class="bg-black p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="../index.html">
+          <img
+            class="h-12"
+            src="./images/revibe logo new.png"
+            alt="Revibe Logo"
+          />
+        </a>
       </div>
-      <div class="flex flex-wrap -mx-4">
-        <div class="w-full px-4">
-          <div class="bg-gray-800 shadow-lg rounded-lg p-6">
-            <h2 class="text-2xl font-bold mb-6 text-white">Get in Touch</h2>
-            <form action="contact-mail.php" method="post">
-              <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 px-4 mb-4">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    name="name"
-                    class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:border-indigo-500 bg-gray-700 text-gray-200"
-                  />
-                </div>
-                <div class="w-full md:w-1/2 px-4 mb-4">
-                  <input
-                    type="email"
-                    placeholder="E-mail"
-                    name="email"
-                    required
-                    class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:border-indigo-500 bg-gray-700 text-gray-200"
-                  />
-                </div>
-                <div class="w-full md:w-1/2 px-4 mb-4">
-                  <input
-                    type="text"
-                    placeholder="Phone Number"
-                    name="phone"
-                    class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:border-indigo-500 bg-gray-700 text-gray-200"
-                  />
-                </div>
-                <div class="w-full md:w-1/2 px-4 mb-4">
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    name="subject"
-                    class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:border-indigo-500 bg-gray-700 text-gray-200"
-                  />
-                </div>
-                <div class="w-full px-4 mb-4">
-                  <textarea
-                    placeholder="Write Your Message"
-                    name="message"
-                    class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:border-indigo-500 bg-gray-700 text-gray-200 h-32"
-                  ></textarea>
-                </div>
-                <div class="w-full px-4">
-                  <input
-                    type="submit"
-                    value="Send Now"
-                    class="w-full bg-indigo-600 text-white p-3 rounded-lg cursor-pointer hover:bg-indigo-700"
-                  />
-                </div>
+    </header>
+
+    <!-- main div container -->
+    <div class="w-full h-full bg-black">
+      <!-- contact section -->
+      <section class="container mx-auto py-8 px-4">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center bg-gray-800 rounded-lg shadow-lg"
+        >
+          <!-- contact form -->
+          <div class="w-full lg:w-1/2 p-8">
+            <h2 class="text-3xl font-bold mb-4 text-white">Get in touch!</h2>
+            <form action="#" method="POST">
+              <div class="mb-4">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your Name"
+                  required
+                  class="w-full p-3 border border-gray-700 rounded-lg bg-gray-700 text-gray-200 focus:outline-none focus:border-red-500"
+                />
               </div>
+              <div class="mb-4">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter a valid email address"
+                  required
+                  class="w-full p-3 border border-gray-700 rounded-lg bg-gray-700 text-gray-200 focus:outline-none focus:border-red-500"
+                />
+              </div>
+              <div class="mb-4">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message"
+                  required
+                  class="w-full p-3 border border-gray-700 rounded-lg bg-gray-700 text-gray-200 focus:outline-none focus:border-red-500 h-32"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full p-3 bg-red-600 rounded-lg text-white font-semibold hover:bg-red-700 transition-colors"
+              >
+                Submit
+              </button>
             </form>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <footer class="bg-black text-white py-10">
-    <div class="container mx-auto">
-      <div class="flex flex-wrap -mx-4">
-        <div class="w-full lg:w-2/3 px-4 mb-8">
-          <div class="mb-6">
-            <a href="index.html"><img src="./images/revibe logo new.png" class="h-12" alt="logo"></a>
-          </div>
-          <p class="mb-6 text-gray-400">We specialize in strategic advertising, digital mastery, precision printing, and integrated marketing solutions. Our commitment is to craft vibrant brand experiences, seamlessly blending conventional and digital approaches.</p>
-          <div class="flex space-x-4">
-            <a href="https://www.instagram.com/revibemarketing/"><img class="h-6" src="./images/pngwing.com (35).png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/revibethemarketxpert"><img class="h-6" src="./images/face.png" alt="Facebook"></a>
-            <a href="https://twitter.com/REVIBEMARKETIN"><img class="h-6" src="./images/Twitter-X-Logo-PNG.png" alt="Twitter"></a>
-          </div>
-        </div>
-        <div class="w-full lg:w-1/3 px-4">
-          <h3 class="text-xl font-bold mb-4 uppercase">Quick Links</h3>
-          <div class="flex flex-row flex-wrap space-x-4">
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:underline">Home</a></li>
-              <li><a href="#" class="hover:underline">About</a></li>
-              <li><a href="./Service/index.html" class="hover:underline">Services</a></li>
-              <li><a href="https://www.instagram.com/revibemarketing/" class="hover:underline">Portfolio</a></li>
-            </ul>
-            <ul class="space-y-2">
-              <li><a href="https://www.instagram.com/revibemarketing/" class="hover:underline">Contact</a></li>
-              <li><a href="https://www.instagram.com/revibemarketing/" class="hover:underline">About Us</a></li>
-              <li><a href="./Service/index.html" class="hover:underline">Clients</a></li>
-              <li><a href="https://twitter.com/REVIBEMARKETIN" class="hover:underline">Expert Team</a></li>
-            </ul>
-            <ul class="space-y-2">
-              <li><a href="https://www.instagram.com/revibemarketing/" class="hover:underline">Latest News</a></li>
-            </ul>
+          <!-- contact details and map -->
+          <div class="w-full lg:w-1/2 p-8 bg-gray-900 rounded-r-lg">
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-white">ADDRESS</h3>
+              <p class="text-gray-400">
+                Padannayil Line, Thekkumbhagam, Tripunithura, Kochi, Kerala
+              </p>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-white">
+                E-mail and Phone No.
+              </h3>
+              <p class="text-gray-400">revibemarketingofficial@gmail.com</p>
+              <p class="text-gray-400">+91 9846883789</p>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-white">OPENING HOURS</h3>
+              <p class="text-gray-400">Mon - Sat, 9:00 AM - 7:00 PM</p>
+              <p class="text-gray-400">Sunday Closed</p>
+            </div>
+            <div class="h-64">
+              <iframe
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border: 0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0958177125426!2d76.34862257393394!3d9.925977774306334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873007603b419%3A0x9249535890f37ce2!2sRevibe%20Marketing!5e0!3m2!1sen!2sin!4v1719835006113!5m2!1sen!2sin"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="container mx-auto py-8 px-4">
+        <h2 class="text-3xl font-bold mb-8 text-white text-center">
+          Frequently Asked Questions
+        </h2>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-4">
+          <div x-data="{ open: false }" class="mb-4">
+            <button
+              @click="open = !open"
+              class="w-full text-left text-lg font-semibold text-white focus:outline-none"
+            >
+              Why prefer Revibe Marketing over other marketing agencies?
+            </button>
+            <div x-show="open" class="mt-2 text-gray-400" x-transition>
+              Solely relying on the ideas of creativity or on the marketing
+              skills wouldn’t necessarily be enough in securing success in a
+              digital landscape dominated by other digital advancements. At
+              Revibe marketing, we have fused together both the key elements of
+              creativity and marketing strategies, forming a perfect fusion that
+              sets us different from the rest, all positive at taking your
+              businesses forward. For an excellent outcome, our equation for
+              success has always remained with the perfect mix of Creativity,
+              Technology and Marketing strategies.
+            </div>
+          </div>
+          <div x-data="{ open: false }" class="mb-4">
+            <button
+              @click="open = !open"
+              class="w-full text-left text-lg font-semibold text-white focus:outline-none"
+            >
+              What are the various services that Revibe Marketing has to offer
+              to its customers?
+            </button>
+            <div x-show="open" class="mt-2 text-gray-400" x-transition>
+              Since we have been following the logarithm that best works in the
+              Digital world, we understand the basic necessities that could make
+              you stand out from the crowd. Hence we have strategically
+              categorised our services into 4 main products: Social branding:
+              Where we capture the soul of your business into the social media
+              platforms beautifully. Interactive design: Where we establish an
+              online presence through building websites, software and
+              applications to expand your reach and engagement. Strategic
+              marketing: Where we lead your business to success through
+              well-proven strategies. Brand consulting: When you need a fresh
+              business launch or a complete revamp of your business.
+            </div>
+          </div>
+          <div x-data="{ open: false }" class="mb-4">
+            <button
+              @click="open = !open"
+              class="w-full text-left text-lg font-semibold text-white focus:outline-none"
+            >
+              How do we evaluate the cost for our products/ services?
+            </button>
+            <div x-show="open" class="mt-2 text-gray-400" x-transition>
+              We do understand the pain of nurturing all kinds of businesses
+              since we hardly had anything while creating our best ideas for
+              Revamp Marketing. Hence, our pricing has been structured in a way
+              that it would be effective and efficient to business owners,
+              ensuring the best results out of your investment. If you want to
+              know the tailored price for your personal product, you can reach
+              out by contacting us via +91 8891583181 or an inquiry can be done
+              to know the same.
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="bg-black py-4">
-      <div class="container mx-auto text-center">
-        <p class="text-gray-500">Copyright &copy; 2024, All Rights Reserved REVIBE</p>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-200 pt-10">
+      <div class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-10"
+        >
+          <div>
+            <a href="../index.html">
+              <img
+                src="./images/revibe logo new.png"
+                class="h-12 mb-4"
+                alt="logo"
+              />
+            </a>
+            <p>
+              We specialize in strategic advertising, digital mastery, precision
+              printing, and integrated marketing solutions. Our commitment is to
+              craft vibrant brand experiences, seamlessly blending conventional
+              and digital approaches.
+            </p>
+            <div class="flex items-center mt-4">
+              <span class="text-lg font-semibold text-white mb-4 block"
+                >Follow us</span
+              >
+              <div class="flex space-x-4 ml-4">
+                <a href="https://www.instagram.com/revibemarketing/">
+                  <img
+                    class="h-8"
+                    src="./images/pngwing.com (35).png"
+                    alt="Instagram Logo"
+                  />
+                </a>
+                <a href="https://www.facebook.com/revibethemarketxpert">
+                  <img
+                    class="h-8"
+                    src="./images/face.png"
+                    alt="Facebook Logo"
+                  />
+                </a>
+                <a href="https://twitter.com/REVIBEMARKETIN">
+                  <img
+                    class="h-8"
+                    src="./images/Twitter-X-Logo-PNG.png"
+                    alt="Twitter Logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+                <div class="footer-widget-heading">
+                    <h3>PRODUCTS</h3>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="./Service/index.html">services</a></li>
+                    <li><a href="https://www.instagram.com/revibemarketing/">portfolio</a></li>
+                    <li><a href="https://www.instagram.com/revibemarketing/">Contact</a></li>
+                    <li><a href="https://www.instagram.com/revibemarketing/">About us</a></li>
+                    <li><a href="./Service/index.html">clients</a></li>
+                    <li><a href="https://twitter.com/REVIBEMARKETIN">Expert Team</a></li>
+                   
+                    <li><a href="https://www.instagram.com/revibemarketing/">Latest News</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+      <div class="bg-gray-900 py-4">
+        <div class="container mx-auto text-center px-4">
+          <p>Copyright &copy; 2024, All Right Reserved RE</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

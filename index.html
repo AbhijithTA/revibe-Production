@@ -42,14 +42,36 @@
     100% { transform: translateX(-100%); }
   }
   .service-description {
-      transition: opacity 0.3s ease-in-out;
-    }
-    .hidden {
-      opacity: 0;
-    }
-    .visible {
-      opacity: 1;
-    }
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        .visible {
+            opacity: 1;
+        }
+
+        .bg-custom {
+            background-color: #620a0a;
+        }
+
+        .text-custom {
+            color: #FF6161;
+        }
+
+        .heading-text {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .line-divider {
+            border-left: 2px solid #FF6161;
+            height: 300px;
+            margin: auto 2rem;
+        }
 </style>
 </head>
 <body>
@@ -81,30 +103,24 @@
 
 
 
- <div class="bannerh1 gap-5">
-
-       <a class="bh1hover" href="./contact/contact.html"> <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">Ultimate destination  <br> 
-           to  
- digital excellence 
-          
-       </h1></a>
-
-       <!-- <h1 class="typing-text">Complete Marketing Solutions</h1>
-  <h1 class="typing-text">Click. Convert. Grow.</h1>
-  <h1 class="typing-text">Your Brand's Digital Partner</h1> -->
-
-
-        <div class="mt-2">  <a href="./contact/contact.html">
-            <button class="px-10 py-3 bg-white rounded-3xl hover:bg-yellow-500">
-                <h5 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold capitalize">
-                    Hire From Us !!
-                </h5>
+      <div class="bannerh1 gap-5 text-center">
+        <a class="bh1hover" href="./contact/contact.html">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
+            Ultimate destination <br>
+            to digital excellence
+          </h1>
+        </a>
+        <div class="mt-4"> <!-- Increased margin-top for more spacing -->
+          <a href="./contact/contact.html">
+            <button class="px-4 py-2 bg-white rounded-3xl hover:bg-yellow-500">
+              <h5 class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold capitalize">
+                Hire From Us !!
+              </h5>
             </button>
-            
-            </a>
-            
+          </a>
         </div>
       </div>
+      
 
 
 
@@ -132,122 +148,60 @@
     
 </section>
 
-<section>
-
-  <a href="./Service/service.html" class="text-[#ffd60a]">
-    <h2 class="text-center uppercase text-4xl mt-20 font-bold">Services</h2>
-  </a>
-  
-
-    <div id="container"></a>
-        
-<div id="first" class="element">
-  <p class="po1"><b>Social Branding</b><br>Digital Assets That Speak Volumes For Your Brand.  
-    One of the best approaches to capturing the customer’s eyes is through social media. Creating an attractive and effective platform can help bring in the soul of your business into life. Being one of the best Social Media Marketing Experts in Kochi, we create some of the most captivating posters, turning your ideas into magnificent art, keeping in touch with your brand’s narrative”
-
-
-</p>
-</div>
-<div id="second" class="element">
-  <p class="po2"><b>DIGITAL MARKETING</b><br>navigate the digital landscape seamlessly with our strategic approach. From targeted campaigns to comprehensive online strategies, we leverage the power of the digital realm to enhance your brand’s visibility and engagement. Trust Revibe to optimize your online presence and drive success in the digital age.”
-
-</p>
-</div>
-<div id="third" class="element">
-  <p class="po3"><b>PRINTING SERVICES</b><br>Imprint your brand with precision and quality. From business essentials to eye-catching promotional materials, our printing services ensure your message is conveyed with clarity and distinction.Elevate your print presence with Revibe’s commitment to excellence.”</p>
-</div>
-</div>
+<section class="container mx-auto py-8 px-4 bg-custom rounded-lg shadow-lg h-auto">
+  <div class="flex flex-col lg:flex-row items-center">
+      <div class="flex flex-col items-start lg:w-1/3">
+          <h2 class="heading-text">Services</h2>
+          <ul class="text-2xl space-y-4 mt-4">
+              <li>
+                  <button onclick="showService('branding')" class="text-custom">Social Branding</button>
+              </li>
+              <li>
+                  <button onclick="showService('design')" class="text-custom">Interactive Design</button>
+              </li>
+              <li>
+                  <button onclick="showService('marketing')" class="text-custom">Strategic Marketing</button>
+              </li>
+              <li>
+                  <button onclick="showService('consulting')" class="text-custom">Brand Consulting</button>
+              </li>
+          </ul>
+      </div>
+      <div class="line-divider hidden lg:block"></div>
+      <div class="flex flex-col items-center lg:w-2/3 mt-8 lg:mt-0 text-white">
+          <div id="branding" class="hidden">
+              <h3 class="text-4xl font-bold mb-4">Digital Assets That Speak Volumes For Your Brand.  </h3>
+              <p class="text-lg">One of the best approaches to capturing the customer’s eyes is through social media. Creating an attractive and effective platform can help bring in the soul of your business into life. Being one of the best Social Media Marketing Experts in Kochi, we create some of the most captivating posters, turning your ideas into magnificent art, keeping in touch with your brand’s narrative</p>
+             <a href="./contact/contact.html"> <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!! </button></a>
+          </div>
+          <div id="design" class="hidden">
+              <h3 class="text-4xl font-bold mb-4">Mark Your Unique Digital Footprints By Your Digital Presence.</h3>
+              <p class="text-lg">Capturing the customer’s eyes alone isn’t enough, it requires holding the attention. Thus, your audience would be next finding more about you in the Google search engine. A strong digital presence can only be built through an efficient website as well as software application. Our Professional Brand Development Team works towards the goal of expanding your reach, amongst the customers by building a reputable brand through our digital pathways.</p>
+              <a href="./contact/contact.html"> <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!! </button></a>
+          </div>
+          <div id="marketing" class="hidden">
+              <h3 class="text-4xl font-bold mb-4">Personalised Ads To Give You Maximum Effectiveness.</h3>
+              <p class="text-lg">To reach your target audience, we work through the world of Digital Marketing using our proven strategies, which ultimately helps achieve your marketing goals. Our Google Ads Experts will give you potential leads to grab onto the sales and also help you make the most out of your investment.</p>
+              <a href="./contact/contact.html"> <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!! </button></a>
+          </div>
+          <div id="consulting" class="hidden">
+              <h3 class="text-4xl font-bold mb-4">Numerous Possibilities To Advance Your Business Venture.</h3>
+              <p class="text-lg">Brand consulting is your way to go, if a fresh business launch or a complete revamp of a business is your goal. As a complete Brand And Sales Agency, we take your business into the next best level by building websites that run ads and provide plans that could build your brand from scratch.</p>
+              <a href="./contact/contact.html"> <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!! </button></a>
+          </div>
+      </div>
+  </div>
 </section>
 
-
-
-
-
-<section>
-    <div id="container" >
-<div id="first1" class="element">
-  <p class="po4"><b>CORPORATE FILMS</b><br>Crafting timeless strategies for enduring impact. With a focus on traditional channels, we navigate the tried-and-true avenues of marketing to enhance your brand’s visibility and resonance. Trust in our expertise to create enduring connections through the art of conventional marketing.
-
-
-</p>
-</div>
-<div id="second2" class="element">
-  <p class="po5"><b>Strategic Marketing</b><br>Personalised Ads To Give You Maximum Effectiveness.
-    To reach your target audience, we work through the world of Digital Marketing using our proven strategies, which ultimately helps achieve your marketing goals. Our Google Ads Experts will give you potential leads to grab onto the sales and also help you make the most out of your investment.
-</p>
-</div>
-<div id="third3" class="element">
-  <p class="po6"><b>WEB DESIGING</b><br>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate</p>
-</div>
-</div><br>
-</section>
-
-
-<!-- <section class="flex flex-col md:flex-row items-start mt-20">
-  <div class="w-full md:w-1/3 px-4 md:px-10">
-    <h2 class="text-left uppercase text-4xl font-bold mb-8 text-[#ffd60a]">Services</h2>
-    <ul>
-      <li class="mb-4">
-        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="advertising">Advertising</button>
-      </li>
-      <li class="mb-4">
-        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="digital-marketing">Digital Marketing</button>
-      </li>
-      <li class="mb-4">
-        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="printing-services">Printing Services</button>
-      </li>
-      <li class="mb-4">
-        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="corporate-films">Corporate Films</button>
-      </li>
-      <li class="mb-4">
-        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="conventional-marketing">Conventional Marketing</button>
-      </li>
-      <li class="mb-4">
-        <button class="service-btn text-lg font-semibold hover:text-[#ffd60a] transition-colors duration-300" data-service="web-designing">Web Designing</button>
-      </li>
-    </ul>
-  </div>
-  <div class="w-full md:w-2/3 px-4 md:px-10 mt-10 md:mt-0">
-    <div id="advertising" class="service-description visible">
-      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Advertising</h3>
-      <p>We craft compelling campaigns that resonate, ensuring your brand takes center stage. Elevate your message, engage effectively, and leave a lasting impression with our tailored advertising solutions.</p>
-    </div>
-    <div id="digital-marketing" class="service-description hidden">
-      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Digital Marketing</h3>
-      <p>Navigate the digital landscape seamlessly with our strategic approach. From targeted campaigns to comprehensive online strategies, we leverage the power of the digital realm to enhance your brand’s visibility and engagement. Trust Revibe to optimize your online presence and drive success in the digital age.</p>
-    </div>
-    <div id="printing-services" class="service-description hidden">
-      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Printing Services</h3>
-      <p>Imprint your brand with precision and quality. From business essentials to eye-catching promotional materials, our printing services ensure your message is conveyed with clarity and distinction. Elevate your print presence with Revibe’s commitment to excellence.</p>
-    </div>
-    <div id="corporate-films" class="service-description hidden">
-      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Corporate Films</h3>
-      <p>We bring your narrative to life through captivating visuals and storytelling. From concept to production, our team specializes in creating compelling corporate films that showcase your brand’s essence, leaving a lasting impression on your audience.</p>
-    </div>
-    <div id="conventional-marketing" class="service-description hidden">
-      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Conventional Marketing</h3>
-      <p>Crafting timeless strategies for enduring impact. With a focus on traditional channels, we navigate the tried-and-true avenues of marketing to enhance your brand’s visibility and resonance. Trust in our expertise to create enduring connections through the art of conventional marketing.</p>
-    </div>
-    <div id="web-designing" class="service-description hidden">
-      <h3 class="text-2xl font-bold mb-2 text-[#ffd60a]">Web Designing</h3>
-      <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate.</p>
-    </div>
-  </div>
-</section> -->
-
-<!-- <script>
-  document.querySelectorAll('.service-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const serviceId = btn.getAttribute('data-service');
-      document.querySelectorAll('.service-description').forEach(desc => {
-        desc.classList.add('hidden');
-        desc.classList.remove('visible');
+<script>
+  function showService(service) {
+      const sections = ['branding', 'design', 'marketing', 'consulting'];
+      sections.forEach(sec => {
+          document.getElementById(sec).classList.add('hidden');
       });
-      document.getElementById(serviceId).classList.remove('hidden');
-      document.getElementById(serviceId).classList.add('visible');
-    });
-  });
-</script> -->
+      document.getElementById(service).classList.remove('hidden');
+  }
+</script>
 
 
 
@@ -363,7 +317,7 @@
     <!-- Review Card 2 -->
     <div class="bg-gray-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
       <div class="relative -mt-12">
-        <img class="w-24 h-24 object-cover rounded-full border-4 border-gray-700 shadow-lg" src="../images/IMG-20240214-WA0031.jpg" alt="Review by Sandeep Satyan">
+        <img class="w-24 h-24 object-cover rounded-full border-4 border-gray-700 shadow-lg" src="./images/IMG-20240214-WA0031.jpg" alt="Review by Sandeep Satyan">
       </div>
       <div class="mt-4">
         <div class="flex justify-center">
@@ -381,7 +335,7 @@
     <!-- Review Card 3 -->
     <div class="bg-gray-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
       <div class="relative -mt-12">
-        <img class="w-24 h-24 object-cover rounded-full border-4 border-gray-700 shadow-lg" src="../images/PHOTO-2024-02-20-09-51-23.jpg" alt="Review by Rahul Menon">
+        <img class="w-24 h-24 object-cover rounded-full border-4 border-gray-700 shadow-lg" src="./images/PHOTO-2024-02-20-09-51-23.jpg" alt="Review by Rahul Menon">
       </div>
       <div class="mt-4">
         <div class="flex justify-center">
@@ -460,6 +414,102 @@
     </div>
   </div>
 </section>
+
+<!-- faq section -->
+<section class="container mx-auto py-8 px-4">
+  <div
+    class="flex flex-col lg:flex-row justify-between items-center bg-custom bg-opacity-80 rounded-lg shadow-lg p-8"
+  >
+    <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+      <h2 class="text-3xl font-bold mb-4 text-white">FAQs</h2>
+      <p class="text-gray-400">
+        Why prefer Revibe Marketing over other marketing agencies?
+      </p>
+    </div>
+    <div class="w-full lg:w-1/2">
+      <div>
+        <button
+          class="w-full text-left text-lg font-semibold text-white focus:outline-none py-2 flex justify-between items-center"
+          onclick="toggleFAQ('faq1')"
+        >
+          <span>Why prefer Revibe Marketing over other marketing agencies?</span>
+          <span>&#x25B2;</span>
+        </button>
+        <div
+          id="faq1"
+          class="mt-2 text-gray-400 hidden"
+        >
+        Solely relying on the ideas of creativity or on the marketing
+        skills wouldn’t necessarily be enough in securing success in a
+        digital landscape dominated by other digital advancements. At
+        Revibe marketing, we have fused together both the key elements of
+        creativity and marketing strategies, forming a perfect fusion that
+        sets us different from the rest, all positive at taking your
+        businesses forward. For an excellent outcome, our equation for
+        success has always remained with the perfect mix of Creativity,
+        Technology and Marketing strategies.
+        </div>
+      </div>
+      <div>
+        <button
+          class="w-full text-left text-lg font-semibold text-white focus:outline-none py-2 flex justify-between items-center"
+          onclick="toggleFAQ('faq2')"
+        >
+          <span> What are the various services that Revibe Marketing has to offer
+            to its customers?</span>
+          <span>&#x25B2;</span>
+        </button>
+        <div
+          id="faq2"
+          class="mt-2 text-gray-400 hidden"
+        >
+        Since we have been following the logarithm that best works in the
+        Digital world, we understand the basic necessities that could make
+        you stand out from the crowd. Hence we have strategically
+        categorised our services into 4 main products: Social branding:
+        Where we capture the soul of your business into the social media
+        platforms beautifully. Interactive design: Where we establish an
+        online presence through building websites, software and
+        applications to expand your reach and engagement. Strategic
+        marketing: Where we lead your business to success through
+        well-proven strategies. Brand consulting: When you need a fresh
+        business launch or a complete revamp of your business.
+        </div>
+      </div>
+      <div>
+        <button
+          class="w-full text-left text-lg font-semibold text-white focus:outline-none py-2 flex justify-between items-center"
+          onclick="toggleFAQ('faq3')"
+        >
+          <span> How do we evaluate the cost for our products/ services?</span>
+          <span>&#x25B2;</span>
+        </button>
+        <div
+          id="faq3"
+          class="mt-2 text-gray-400 hidden"
+        >
+        We do understand the pain of nurturing all kinds of businesses
+              since we hardly had anything while creating our best ideas for
+              Revamp Marketing. Hence, our pricing has been structured in a way
+              that it would be effective and efficient to business owners,
+              ensuring the best results out of your investment. If you want to
+              know the tailored price for your personal product, you can reach
+              out by contacting us via +91 8891583181 or an inquiry can be done
+              to know the same.
+        </div>
+      </div>
+     
+     
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleFAQ(id) {
+    const element = document.getElementById(id);
+    element.classList.toggle('hidden');
+  }
+</script>
 
 
 <!-- partial:index.partial.html -->
