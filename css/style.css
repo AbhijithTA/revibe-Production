@@ -251,37 +251,30 @@ nav > #utility {
   gap: 3%;
   transition: flex-wrap 0.5s ease;
 }
-.element{
-  width: 300px;
-  height: 200px;
-  margin: 0%;
-  background-color: #000;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: .5s all;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.element {
+  @apply w-72 h-48 bg-black rounded-lg cursor-pointer flex items-center justify-center relative overflow-hidden transition-all duration-500;
 }
-.element:hover{
-  width: 300px;
-  height: 200px;
+
+.element p {
+  @apply absolute inset-0 flex items-center justify-center text-white text-sm bg-gray-900 p-6 rounded-lg opacity-0 transition-opacity duration-500 ease-in-out;
 }
-.element:hover p{
-  display: block;animation: fadeIn 1s;}
+
+.element:hover p {
+  @apply opacity-100;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-}
-.element p{
-  font-size: 0.7rem;
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 15px;
-  display: none;
-  transition: 0.5s all;
-}
+
 .element .po1{
   font-size: 0.9rem;
   color: whitesmoke;
