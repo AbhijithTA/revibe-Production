@@ -1,11 +1,14 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
-  plugins: [
-    require('tailwindcss'),
-   
-  ],
-}
+  variants: {
+    extend: {
+      backgroundColor: ['active', 'hover', 'focus'],
+      textColor: ['active', 'hover', 'focus'],
+    },
+  },
+  plugins: [],
+};

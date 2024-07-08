@@ -252,17 +252,40 @@ nav > #utility {
   transition: flex-wrap 0.5s ease;
 }
 .element {
-  @apply w-72 h-48 bg-black rounded-lg cursor-pointer flex items-center justify-center relative overflow-hidden transition-all duration-500;
+  width: 18rem; /* w-72 in Tailwind CSS */
+  height: 12rem; /* h-48 in Tailwind CSS */
+  background-color: black; /* bg-black */
+  border-radius: 0.75rem; /* rounded-lg */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s; /* transition-all duration-500 */
 }
 
 .element p {
-  @apply absolute inset-0 flex items-center justify-center text-white text-sm bg-gray-900 p-6 rounded-lg opacity-0 transition-opacity duration-500 ease-in-out;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* text-white */
+  font-size: 0.875rem; /* text-sm */
+  background-color: #1a202c; /* bg-gray-900 */
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.75rem; /* rounded-lg */
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* transition-opacity and transform */
 }
 
 .element:hover p {
-  @apply opacity-100;
-  animation: fadeIn 0.5s ease-in-out forwards;
+  opacity: 1;
+  transform: scale(1);
 }
+
 
 @keyframes fadeIn {
   from {
@@ -274,6 +297,7 @@ nav > #utility {
     transform: scale(1);
   }
 }
+
 
 .element .po1{
   font-size: 0.9rem;
