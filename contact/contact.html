@@ -13,19 +13,8 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/cdn.min.js"
       defer
     ></script>
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background-color: #8B0000; /* Dark red background color */
-      }
-      .container {
-        padding: 0 1rem;
-      }
-    </style>
   </head>
-  <body>
+  <body class="bg-black text-gray-200">
     <header class="bg-black p-4">
       <div class="container mx-auto flex justify-between items-center">
         <a href="../index.html">
@@ -39,124 +28,221 @@
     </header>
 
     <!-- main div container -->
-    <div class="w-full h-full">
+    <div class="w-full h-full bg-black">
       <!-- contact section -->
       <section class="container mx-auto py-8 px-4">
         <div
-          class="flex flex-col lg:flex-row justify-between items-center bg-red-700 rounded-lg shadow-lg"
+          class="flex flex-col lg:flex-row justify-between items-center bg-gray-800 rounded-lg shadow-lg"
         >
           <!-- contact form -->
-          <div class="w-full lg:w-1/2 p-8 bg-red-700 rounded-lg">
-            <h2 class="text-3xl font-bold mb-4 text-white">Explore ideas with a free consultation</h2>
-            <p class="text-white mb-4">
-              We don't just follow trends We create trends for you. We aim to inject fresh, vibrant energy into your brand, offering you a new vibe of marketing experiences. As Transforming marketing into Exciting Experiences, we blend creativity with innovation to deliver custom strategies that captivate your audience and push your brand to the next level
-            </p>
+          <div class="w-full lg:w-1/2 p-8">
+            <h2 class="text-3xl font-bold mb-4 text-white">Get in touch!</h2>
             <form action="#" method="POST">
               <div class="mb-4">
-                <label class="block text-white mb-2" for="fullName">Full Name*</label>
                 <input
                   type="text"
-                  id="fullName"
-                  name="fullName"
-                  placeholder="Enter here"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your Name"
                   required
-                  class="w-full p-3 border border-gray-700 rounded-lg bg-white text-gray-900 focus:outline-none focus:border-red-500"
+                  class="w-full p-3 border border-gray-700 rounded-lg bg-gray-700 text-gray-200 focus:outline-none focus:border-red-500"
                 />
               </div>
               <div class="mb-4">
-                <label class="block text-white mb-2" for="businessEmail">Business Email*</label>
                 <input
                   type="email"
-                  id="businessEmail"
-                  name="businessEmail"
-                  placeholder="Enter here"
+                  id="email"
+                  name="email"
+                  placeholder="Enter a valid email address"
                   required
-                  class="w-full p-3 border border-gray-700 rounded-lg bg-white text-gray-900 focus:outline-none focus:border-red-500"
+                  class="w-full p-3 border border-gray-700 rounded-lg bg-gray-700 text-gray-200 focus:outline-none focus:border-red-500"
                 />
               </div>
               <div class="mb-4">
-                <label class="block text-white mb-2" for="phoneNumber">Phone Number*</label>
-                <div class="flex flex-col sm:flex-row">
-                  <select class="p-3 border border-gray-700 rounded-t-lg sm:rounded-l-lg sm:rounded-t-none bg-white text-gray-900 focus:outline-none focus:border-red-500">
-                    <option>India</option>
-                    <!-- Add more country options as needed -->
-                  </select>
-                  <input
-                    type="text"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    placeholder="Phone number"
-                    required
-                    class="w-full p-3 border border-gray-700 rounded-b-lg sm:rounded-r-lg sm:rounded-b-none bg-white text-gray-900 focus:outline-none focus:border-red-500"
-                  />
-                </div>
-              </div>
-              <div class="mb-4">
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message"
+                  required
+                  class="w-full p-3 border border-gray-700 rounded-lg bg-gray-700 text-gray-200 focus:outline-none focus:border-red-500 h-32"
+                ></textarea>
               </div>
               <button
                 type="submit"
-                class="w-full p-3 bg-white rounded-lg text-red-700 font-semibold hover:bg-gray-200 transition-colors"
+                class="w-full p-3 bg-red-600 rounded-lg text-white font-semibold hover:bg-red-700 transition-colors"
               >
                 Submit
               </button>
             </form>
           </div>
-          <!-- Image and Details -->
-          <div class="w-full lg:w-1/2 p-8 bg-red-700 rounded-lg flex justify-center items-center">
-            <img src="./images/revibe logo new.png" alt="Consultation" class="w-full h-auto rounded-lg max-w-xs lg:max-w-md" />
+          <!-- contact details and map -->
+          <div class="w-full lg:w-1/2 p-8 bg-gray-900 rounded-r-lg">
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-white">ADDRESS</h3>
+              <p class="text-gray-400">
+                Padannayil Line, Thekkumbhagam, Tripunithura, Kochi, Kerala
+              </p>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-white">
+                E-mail and Phone No.
+              </h3>
+              <p class="text-gray-400">revibemarketingofficial@gmail.com</p>
+              <p class="text-gray-400">+91 9846883789</p>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-white">OPENING HOURS</h3>
+              <p class="text-gray-400">Mon - Sat, 9:00 AM - 7:00 PM</p>
+              <p class="text-gray-400">Sunday Closed</p>
+            </div>
+            <div class="h-64">
+              <img
+              src="../images/contactUs.jpg"
+              alt="Location"
+              class="w-full h-full object-cover rounded-lg"
+            />
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- FAQ Section -->
+      <!-- <section class="container mx-auto py-8 px-4">
+        <h2 class="text-3xl font-bold mb-8 text-white text-center">
+          Frequently Asked Questions
+        </h2>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-4">
+          <div x-data="{ open: false }" class="mb-4">
+            <button
+              @click="open = !open"
+              class="w-full text-left text-lg font-semibold text-white focus:outline-none"
+            >
+              Why prefer Revibe Marketing over other marketing agencies?
+            </button>
+            <div x-show="open" class="mt-2 text-gray-400" x-transition>
+              Solely relying on the ideas of creativity or on the marketing
+              skills wouldn’t necessarily be enough in securing success in a
+              digital landscape dominated by other digital advancements. At
+              Revibe marketing, we have fused together both the key elements of
+              creativity and marketing strategies, forming a perfect fusion that
+              sets us different from the rest, all positive at taking your
+              businesses forward. For an excellent outcome, our equation for
+              success has always remained with the perfect mix of Creativity,
+              Technology and Marketing strategies.
+            </div>
+          </div>
+          <div x-data="{ open: false }" class="mb-4">
+            <button
+              @click="open = !open"
+              class="w-full text-left text-lg font-semibold text-white focus:outline-none"
+            >
+              What are the various services that Revibe Marketing has to offer
+              to its customers?
+            </button>
+            <div x-show="open" class="mt-2 text-gray-400" x-transition>
+              Since we have been following the logarithm that best works in the
+              Digital world, we understand the basic necessities that could make
+              you stand out from the crowd. Hence we have strategically
+              categorised our services into 4 main products: Social branding:
+              Where we capture the soul of your business into the social media
+              platforms beautifully. Interactive design: Where we establish an
+              online presence through building websites, software and
+              applications to expand your reach and engagement. Strategic
+              marketing: Where we lead your business to success through
+              well-proven strategies. Brand consulting: When you need a fresh
+              business launch or a complete revamp of your business.
+            </div>
+          </div>
+          <div x-data="{ open: false }" class="mb-4">
+            <button
+              @click="open = !open"
+              class="w-full text-left text-lg font-semibold text-white focus:outline-none"
+            >
+              How do we evaluate the cost for our products/ services?
+            </button>
+            <div x-show="open" class="mt-2 text-gray-400" x-transition>
+              We do understand the pain of nurturing all kinds of businesses
+              since we hardly had anything while creating our best ideas for
+              Revamp Marketing. Hence, our pricing has been structured in a way
+              that it would be effective and efficient to business owners,
+              ensuring the best results out of your investment. If you want to
+              know the tailored price for your personal product, you can reach
+              out by contacting us via +91 8891583181 or an inquiry can be done
+              to know the same.
+            </div>
+          </div>
+        </div>
+      </section> -->
     </div>
 
     <!-- Footer -->
     <footer class="bg-black text-gray-200 pt-10">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-10"
+        >
           <div>
             <a href="../index.html">
-              <img src="./images/revibe logo new.png" class="h-12 mb-4" alt="logo" />
+              <img
+                src="./images/revibe logo new.png"
+                class="h-12 mb-4"
+                alt="logo"
+              />
             </a>
             <p>
-              We specialize in strategic advertising, digital mastery, precision printing, and integrated marketing
-              solutions. Our commitment is to craft vibrant brand experiences, seamlessly blending conventional and
-              digital approaches.
+              We specialize in strategic advertising, digital mastery, precision
+              printing, and integrated marketing solutions. Our commitment is to
+              craft vibrant brand experiences, seamlessly blending conventional
+              and digital approaches.
             </p>
             <div class="flex items-center mt-4">
-              <span class="text-lg font-semibold text-white mb-4 block">Follow us</span>
+              <span class="text-lg font-semibold text-white mb-4 block"
+                >Follow us</span
+              >
               <div class="flex space-x-4 ml-4">
                 <a href="https://www.instagram.com/revibemarketing/">
-                  <img class="h-8" src="./images/pngwing.com (35).png" alt="Instagram Logo" />
+                  <img
+                    class="h-8"
+                    src="./images/pngwing.com (35).png"
+                    alt="Instagram Logo"
+                  />
                 </a>
                 <a href="https://www.facebook.com/revibethemarketxpert">
-                  <img class="h-8" src="./images/face.png" alt="Facebook Logo" />
+                  <img
+                    class="h-8"
+                    src="./images/face.png"
+                    alt="Facebook Logo"
+                  />
                 </a>
                 <a href="https://twitter.com/REVIBEMARKETIN">
-                  <img class="h-8" src="./images/Twitter-X-Logo-PNG.png" alt="Twitter Logo" />
+                  <img
+                    class="h-8"
+                    src="./images/Twitter-X-Logo-PNG.png"
+                    alt="Twitter Logo"
+                  />
                 </a>
               </div>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
             <div class="footer-widget">
-              <div class="footer-widget-heading">
-                <h3>PRODUCTS</h3>
-              </div>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="./Service/index.html">services</a></li>
-                <li><a href="https://www.instagram.com/revibemarketing/">portfolio</a></li>
-                <li><a href="https://www.instagram.com/revibemarketing/">Contact</a></li>
-                <li><a href="https://www.instagram.com/revibemarketing/">About us</a></li>
-                <li><a href="./Service/index.html">clients</a></li>
-                <li><a href="https://twitter.com/REVIBEMARKETIN">Expert Team</a></li>
-
-                <li><a href="https://www.instagram.com/revibemarketing/">Latest News</a></li>
-              </ul>
+                <div class="footer-widget-heading">
+                    <h3>PRODUCTS</h3>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="./Service/index.html">services</a></li>
+                    <li><a href="https://www.instagram.com/revibemarketing/">portfolio</a></li>
+                    <li><a href="https://www.instagram.com/revibemarketing/">Contact</a></li>
+                    <li><a href="https://www.instagram.com/revibemarketing/">About us</a></li>
+                    <li><a href="./Service/index.html">clients</a></li>
+                    <li><a href="https://twitter.com/REVIBEMARKETIN">Expert Team</a></li>
+                   
+                    <li><a href="https://www.instagram.com/revibemarketing/">Latest News</a></li>
+                </ul>
             </div>
-          </div>
+        </div>
         </div>
       </div>
       <div class="bg-gray-900 py-4">
