@@ -242,7 +242,7 @@ nav > #utility {
 #container{
   width: 90%;
   margin: 5%;
-  height: 40vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,6 +251,21 @@ nav > #utility {
   gap: 3%;
   transition: flex-wrap 0.5s ease;
 }
+
+@media (max-width: 1200px) {
+  #container {
+    height: auto; /* Auto height for screens up to 1200px */
+    padding-bottom: 3em; /* Add padding for extra space */
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    height: auto; /* Auto height for screens up to 768px */
+    padding-bottom: 3em; /* Add padding for extra space */
+  }
+}
+
 .element {
   width: 18rem; /* w-72 in Tailwind CSS */
   height: 12rem; /* h-48 in Tailwind CSS */
@@ -1467,7 +1482,7 @@ padding: 0em 1.5em .5em 1.5em;}
 #container{
   width: 90%;
   margin: 5%;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2270,6 +2285,30 @@ margin-left: 0em;}
   flex-wrap: wrap;
   gap: 3%;
   transition: flex-wrap 0.5s ease;
+}
+
+@media (max-width: 1200px) {
+  #container {
+    height: auto;
+    min-height: 100vh; /* Ensure minimum height is 100vh */
+    padding-bottom: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  #container {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 3em;
+  }
 }
 .element{
   width: 400px;

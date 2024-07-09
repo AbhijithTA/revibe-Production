@@ -151,9 +151,9 @@
 </section>
 
 <section class="container mx-auto py-8 px-4">
-  <a href="./Service/service.html">
+  <a href="#">
     <h2 class="text-center uppercase text-4xl mt-20 font-bold">
-      <span class="text-[#ffd60a]">Services</span>
+      <span class="text-blue-700">Services</span>
     </h2>
   </a>
   <div id="container" class="flex flex-wrap gap-4 justify-center mt-8">
@@ -170,6 +170,16 @@
     <div id="third" class="element relative">
       <p class="po3 absolute inset-0 flex items-center justify-center text-white text-sm bg-gray-900 p-6 rounded-lg opacity-0 transform scale-95 transition-all duration-500 ease-in-out">
         <b>PRINTING SERVICES</b><br>Imprint your brand with precision and quality. From business essentials to eye-catching promotional materials, our printing services ensure your message is conveyed with clarity and distinction. Elevate your print presence with Revibe’s commitment to excellence.”
+      </p>
+    </div>
+    <div id="first1" class="element relative">
+      <p class="po3 absolute inset-0 flex items-center justify-center text-white text-sm bg-gray-900 p-6 rounded-lg opacity-0 transform scale-95 transition-all duration-500 ease-in-out">
+        <b>CORPORATE FILMS</b><br>Crafting timeless strategies for enduring impact. With a focus on traditional channels, we navigate the tried-and-true avenues of marketing to enhance your brand’s visibility and resonance. Trust in our expertise to create enduring connections through the art of conventional marketing.
+      </p>
+    </div>
+    <div id="second2" class="element relative">
+      <p class="po3 absolute inset-0 flex items-center justify-center text-white text-sm bg-gray-900 p-6 rounded-lg opacity-0 transform scale-95 transition-all duration-500 ease-in-out">
+        <b>CONVENTIONAL MARKETING</b><br>We bring your narrative to life through captivating visuals and storytelling. From concept to production, our team specializes in creating compelling corporate films that showcase your brand’s essence, leaving a lasting impression on your audience.
       </p>
     </div>
   </div>
@@ -203,49 +213,57 @@
 
 <section class="container mx-auto py-8 px-4 bg-custom rounded-lg shadow-lg h-auto">
   <div class="flex flex-col lg:flex-row items-center">
-      <div class="flex flex-col items-start lg:w-1/3">
-          <h2 class="heading-text">WELL-PROVEN WAYS TO STRATEGIZE YOUR ENTREPRENEURIAL GROWTH
-            Expand the full horizon of your business through our well-proven strategies. Leading a business to success requires the ultimate skill which we are dedicated to, leaving no opportunities at stake. This brings the success to your business, it rightfully deserves.</h2>
-          <ul class="text-2xl space-y-4 mt-4">
-              <li>
-                  <button onclick="showService('branding')" class="text-custom">Social Branding</button>
-              </li>
-              <li>
-                  <button onclick="showService('design')" class="text-custom">Interactive Design</button>
-              </li>
-              <li>
-                  <button onclick="showService('marketing')" class="text-custom">Strategic Marketing</button>
-              </li>
-              <li>
-                  <button onclick="showService('consulting')" class="text-custom">Brand Consulting</button>
-              </li>
-          </ul>
+    <div class="flex flex-col items-start lg:w-1/3">
+      <h2 class="text-xl md:text-3xl lg:text-4xl font-bold leading-tight text-white">WELL-PROVEN WAYS TO STRATEGIZE YOUR ENTREPRENEURIAL GROWTH</h2>
+      <ul class="text-xl md:text-2xl space-y-4 mt-4">
+        <li>
+          <button onclick="showService('branding')" class="text-custom">Social Branding</button>
+        </li>
+        <li>
+          <button onclick="showService('design')" class="text-custom">Interactive Design</button>
+        </li>
+        <li>
+          <button onclick="showService('marketing')" class="text-custom">Strategic Marketing</button>
+        </li>
+        <li>
+          <button onclick="showService('consulting')" class="text-custom">Brand Consulting</button>
+        </li>
+      </ul>
+    </div>
+    <div class="line-divider hidden lg:block"></div>
+    <div class="flex flex-col items-center lg:w-2/3 mt-8 lg:mt-0 text-white">
+      <div id="branding" class="hidden">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">Digital Assets That Speak Volumes For Your Brand.</h3>
+        <p class="text-lg">One of the best approaches to capturing the customer’s eyes is through social media...</p>
+        <a href="./contact/contact.html">
+          <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!!</button>
+        </a>
       </div>
-      <div class="line-divider hidden lg:block"></div>
-      <div class="flex flex-col items-center lg:w-2/3 mt-8 lg:mt-0 text-white">
-          <div id="branding" class="hidden">
-              <h3 class="text-4xl font-bold mb-4">Digital Assets That Speak Volumes For Your Brand. </h3>
-              <p class="text-lg">One of the best approaches to capturing the customer’s eyes is through social media. Creating an attractive and effective platform can help bring in the soul of your business into life. Being one of the best Social Media Marketing Experts in Kochi, we create some of the most captivating posters, turning your ideas into magnificent art, keeping in touch with your brand’s narrative. </p>
-             <a href="./contact/contact.html"> <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!! </button></a>
-          </div>
-          <div id="design" class="hidden">
-              <h3 class="text-4xl font-bold mb-4">Mark Your Unique Digital Footprints By Your Digital Presence.</h3>
-              <p class="text-lg">Capturing the customer’s eyes alone isn’t enough, it requires holding the attention. Thus, your audience would be next finding more about you in the Google search engine. A strong digital presence can only be built through an efficient website as well as software application. Our Professional Brand Development Team works towards the goal of expanding your reach, amongst the customers by building a reputable brand through our digital pathways.</p>
-              <a href="./contact/contact.html"> <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!! </button></a>
-          </div>
-          <div id="marketing" class="hidden">
-              <h3 class="text-4xl font-bold mb-4">Personalised Ads To Give You Maximum Effectiveness.</h3>
-              <p class="text-lg">To reach your target audience, we work through the world of Digital Marketing using our proven strategies, which ultimately helps achieve your marketing goals. Our Google Ads Experts will give you potential leads to grab onto the sales and also help you make the most out of your investment.</p>
-              <a href="./contact/contact.html"> <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!! </button></a>
-          </div>
-          <div id="consulting" class="hidden">
-              <h3 class="text-4xl font-bold mb-4">Numerous Possibilities To Advance Your Business Venture.</h3>
-              <p class="text-lg">Brand consulting is your way to go, if a fresh business launch or a complete revamp of a business is your goal. As a complete Brand And Sales Agency, we take your business into the next best level by building websites that run ads and provide plans that could build your brand from scratch. </p>
-              <a href="./contact/contact.html"> <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!! </button></a>
-          </div>
+      <div id="design" class="hidden">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">Mark Your Unique Digital Footprints By Your Digital Presence.</h3>
+        <p class="text-lg">Capturing the customer’s eyes alone isn’t enough, it requires holding the attention...</p>
+        <a href="./contact/contact.html">
+          <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!!</button>
+        </a>
       </div>
+      <div id="marketing" class="hidden">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">Personalised Ads To Give You Maximum Effectiveness.</h3>
+        <p class="text-lg">To reach your target audience, we work through the world of Digital Marketing...</p>
+        <a href="./contact/contact.html">
+          <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!!</button>
+        </a>
+      </div>
+      <div id="consulting" class="hidden">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">Numerous Possibilities To Advance Your Business Venture.</h3>
+        <p class="text-lg">Brand consulting is your way to go, if a fresh business launch or a complete revamp...</p>
+        <a href="./contact/contact.html">
+          <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full">Consult Us. Free!!!</button>
+        </a>
+      </div>
+    </div>
   </div>
 </section>
+
 
 <script>
   function showService(service) {
