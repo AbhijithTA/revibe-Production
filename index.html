@@ -222,16 +222,24 @@
       </h3>
       <ul class="text-xl md:text-2xl space-y-4 mt-4 text-white">
         <li>
-          <button onclick="showService('branding')" class="text-custom hover:text-blue-300 arrow">Social Branding</button>
+          <button onclick="showService('branding')" class="text-custom hover:text-blue-300 arrow flex items-center justify-between w-full">
+            Social Branding
+          </button>
         </li>
         <li>
-          <button onclick="showService('design')" class="text-custom hover:text-blue-300 arrow">Interactive Design</button>
+          <button onclick="showService('design')" class="text-custom hover:text-blue-300 arrow flex items-center justify-between w-full">
+            Interactive Design
+          </button>
         </li>
         <li>
-          <button onclick="showService('marketing')" class="text-custom hover:text-blue-300 arrow">Strategic Marketing</button>
+          <button onclick="showService('marketing')" class="text-custom hover:text-blue-300 arrow flex items-center justify-between w-full">
+            Strategic Marketing
+          </button>
         </li>
         <li>
-          <button onclick="showService('consulting')" class="text-custom hover:text-blue-300 arrow">Brand Consulting</button>
+          <button onclick="showService('consulting')" class="text-custom hover:text-blue-300 arrow flex items-center justify-between w-full">
+            Brand Consulting
+          </button>
         </li>
       </ul>
     </div>
@@ -261,12 +269,9 @@
       <div id="consulting" class="hidden">
         <h3 class="text-3xl md:text-4xl font-bold mb-4">Numerous Possibilities To Advance Your Business Venture.</h3>
         <p class="text-lg">Brand consulting is your way to go, if a fresh business launch or a complete revamp of a business is your goal. As a complete Brand And Sales Agency, we take your business into the next best level by building websites that run ads and provide plans that could build your brand from scratch.</p>
-        
         <a href="./contact/contact.html">
           <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full ml-8">Consult Us. Free!!!</button>
         </a>
-        
-        </div>
       </div>
     </div>
   </div>
@@ -292,7 +297,7 @@
   .arrow::after {
     content: '▼';
     display: inline-block;
-    margin-left: 8px;
+    margin-left: auto;
     transition: transform 0.3s ease;
   }
   .arrow.active::after {
