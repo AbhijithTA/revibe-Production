@@ -54,11 +54,11 @@
         }
 
         .bg-custom {
-            background-color: #321B7A;
+            background-color: #1D4ED8;
         }
 
         .text-custom {
-            color: #FF6161;
+            color: #F3F4F6;
         }
 
         .heading-text {
@@ -214,20 +214,24 @@
 <section class="container mx-auto py-8 px-4 bg-custom rounded-lg shadow-lg h-auto">
   <div class="flex flex-col lg:flex-row items-center">
     <div class="flex flex-col items-start lg:w-1/3">
-      <h2 class="text-xl md:text-3xl lg:text-4xl font-bold leading-tight text-white">WELL-PROVEN WAYS TO STRATEGIZE YOUR ENTREPRENEURIAL GROWTH</h2>
-      <h3 class="text-lg md:text-2xl lg:text-3xl font-medium leading-tight text-white mt-2">Expand the full horizon of your business through our well-proven strategies.  This brings the success to your business, it rightfully deserves.</h3>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white">
+        WELL-PROVEN WAYS TO STRATEGIZE YOUR ENTREPRENEURIAL GROWTH
+      </h2>
+      <h3 class="text-base md:text-lg lg:text-xl font-medium leading-snug text-white mt-4">
+        Expand the full horizon of your business through our well-proven strategies. Leading a business to success requires the ultimate skill which we are dedicated to, leaving no opportunities at stake. This brings the success to your business, it rightfully deserves.
+      </h3>
       <ul class="text-xl md:text-2xl space-y-4 mt-4 text-white">
         <li>
-          <button onclick="showService('branding')" class="text-custom hover:text-blue-300">Social Branding</button>
+          <button onclick="showService('branding')" class="text-custom hover:text-blue-300 arrow">Social Branding</button>
         </li>
         <li>
-          <button onclick="showService('design')" class="text-custom hover:text-blue-300">Interactive Design</button>
+          <button onclick="showService('design')" class="text-custom hover:text-blue-300 arrow">Interactive Design</button>
         </li>
         <li>
-          <button onclick="showService('marketing')" class="text-custom hover:text-blue-300">Strategic Marketing</button>
+          <button onclick="showService('marketing')" class="text-custom hover:text-blue-300 arrow">Strategic Marketing</button>
         </li>
         <li>
-          <button onclick="showService('consulting')" class="text-custom hover:text-blue-300">Brand Consulting</button>
+          <button onclick="showService('consulting')" class="text-custom hover:text-blue-300 arrow">Brand Consulting</button>
         </li>
       </ul>
     </div>
@@ -257,9 +261,12 @@
       <div id="consulting" class="hidden">
         <h3 class="text-3xl md:text-4xl font-bold mb-4">Numerous Possibilities To Advance Your Business Venture.</h3>
         <p class="text-lg">Brand consulting is your way to go, if a fresh business launch or a complete revamp of a business is your goal. As a complete Brand And Sales Agency, we take your business into the next best level by building websites that run ads and provide plans that could build your brand from scratch.</p>
+        
         <a href="./contact/contact.html">
           <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full ml-8">Consult Us. Free!!!</button>
         </a>
+        
+        </div>
       </div>
     </div>
   </div>
@@ -272,8 +279,26 @@
           document.getElementById(sec).classList.add('hidden');
       });
       document.getElementById(service).classList.remove('hidden');
+
+      const buttons = document.querySelectorAll('.arrow');
+      buttons.forEach(button => {
+          button.classList.remove('active');
+      });
+      document.querySelector(`button[onclick="showService('${service}')"]`).classList.add('active');
   }
 </script>
+
+<style>
+  .arrow::after {
+    content: '▼';
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  .arrow.active::after {
+    transform: rotate(180deg);
+  }
+</style>
 
 
 
@@ -302,35 +327,35 @@
            
 
     <div class="gallery">
-                <a href="#" class="image">
+                <a href="/" class="image">
                      <img src="./images/app des.png" alt="one">
                 </a>
 
-                <a href="#"  class="image">
+                <a href="/"  class="image">
                       <img src="./images/carl.png" alt="one">
                 </a>
 
-                <a href="#"  class="image">
+                <a href="/"  class="image">
                      <img src="./images/web des.png" alt="one">
                 </a>
 
-                <a href="#"  class="image">
+                <a href="/"  class="image">
                       <img src="./images/revibe metro mockups.png" alt="one">
                 </a>
 
-                <a href="#"  class="image">
+                <a href="/"  class="image">
                      <img src="./images/calendar.png" alt="one">
                 </a>
 
-                <a href="#"  class="image">
+                <a href="/"  class="image">
                      <img src="./images/WhatsApp Image 2024-03-15 at 11.00.28.jpeg" alt="one">
                 </a>
 
-                <a href="#"  class="image">
+                <a href="/"  class="image">
                       <img src="./images/WhatsApp Image 2024-03-15 at 11.02.38.jpeg" alt="one">
                 </a>
 
-                <a href="#"  class="image">
+                <a href="/"  class="image">
                     <img src="./images/bp2.jpg" alt="one">
                 </a>
             </div>
@@ -511,17 +536,18 @@
           <span>What are the various services that Revibe Marketing has to offer to its customers?</span>
           <span id="arrow1" class="transform transition-transform">&#x25B2;</span>
         </button>
-        <div
-          id="faq1"
-          class="mt-2 text-gray-400 hidden"
-        >
-        Since we have been following the logarithm that best works in the Digital world, we understand the basic necessities that could make you stand out from the crowd. Hence we have strategically categorised our services into 4 main products: 
-•	Social branding: Where we capture the soul of your business into the social media platforms beautifully.
-•	Interactive design: Where we establish an online presence through building websites, software and applications to expand your reach and engagement.
-•	Strategic marketing: Where we lead your business to success through well-proven strategies.
-•	Brand consulting: When you need a fresh business launch or a complete revamp of your business.
-
+        <div id="faq1" class="mt-2 text-gray-400 hidden">
+          <p>
+            Since we have been following the logarithm that best works in the Digital world, we understand the basic necessities that could make you stand out from the crowd. Hence we have strategically categorised our services into 4 main products:
+          </p>
+          <ul class="list-disc pl-5 mt-2 text-gray-300">
+            <li class="custom-bullet">Social branding: Where we capture the soul of your business into the social media platforms beautifully.</li>
+            <li class="custom-bullet">Interactive design: Where we establish an online presence through building websites, software and applications to expand your reach and engagement.</li>
+            <li class="custom-bullet">Strategic marketing: Where we lead your business to success through well-proven strategies.</li>
+            <li class="custom-bullet">Brand consulting: When you need a fresh business launch or a complete revamp of your business.</li>
+          </ul>
         </div>
+        
       </div>
       <div>
         <button
