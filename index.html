@@ -241,6 +241,11 @@
             Brand Consulting
           </button>
         </li>
+        <li>
+          <button onclick="showService('video')" class="text-custom hover:text-blue-300 arrow flex items-center justify-between w-full">
+            Interactive Videos
+          </button>
+        </li>
       </ul>
     </div>
     <div class="line-divider hidden lg:block bg-white h-full w-px"></div>
@@ -273,13 +278,21 @@
           <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full ml-8">Consult Us. Free!!!</button>
         </a>
       </div>
+      <div id="video" class="hidden">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">We specialize in delivering a diverse range of video production services without compromising on the quality.
+        </h3>
+        <p class="text-lg">We take pride in ourselves for our ability to produce high-caliber content while maintaining affordability, making professional video accessible for businesses of all sizes like comercial ,theatre and youtube ads ,meta ads Whether you need pre-production planning, filming, editing, or post-production services.</p>
+        <a href="./contact/contact.html">
+          <button class="bg-white text-black font-semibold mt-4 py-2 px-4 rounded-full ml-8">Consult Us. Free!!!</button>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
 <script>
   function showService(service) {
-      const sections = ['branding', 'design', 'marketing', 'consulting'];
+      const sections = ['branding', 'design', 'marketing', 'consulting','video'];
       sections.forEach(sec => {
           document.getElementById(sec).classList.add('hidden');
       });
@@ -625,7 +638,7 @@
                                 <a href="index.html"><img src="./images/revibe logo new.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>we specializing in strategic advertising, digital mastery, precision printing, and integrated marketing solutions. Our commitment is to craft vibrant brand experiences, seamlessly blending conventional and digital approaches</p>
+                                <p>We don't just follow trends We create trends for you. We aim to inject fresh, vibrant energy into your brand, offering you a new vibe of marketing experiences. As Transforming marketing into Exciting Experiences, we blend creativity with innovation to deliver custom strategies that captivate your audience and push  your brand to the next level</p>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="text-lg font-semibold text-white mb-4 block">Follow us</span>
